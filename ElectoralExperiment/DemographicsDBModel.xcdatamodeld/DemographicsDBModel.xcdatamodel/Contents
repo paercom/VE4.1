@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AgeGroupQuestionaire" representedClassName="AgeGroupQuestionaire" syncable="YES">
+        <attribute name="userAgeGroupSelection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="ageGroupObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="AnnualHousholdIncomeQuestionaire" representedClassName="AnnualHousholdIncomeQuestionaire" syncable="YES">
+        <attribute name="userAnnualHousholdIncomeSelection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="annualHouseholdIncomeObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="GenderQuestionaire" representedClassName="GenderQuestionaire" syncable="YES">
+        <attribute name="additionalGenderInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userGenderSelection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="genderObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="MostImportantIssueQuestionaire" representedClassName="MostImportantIssueQuestionaire" syncable="YES">
+        <attribute name="userAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="mostImportantIssueObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="PoliticalAffiliationQuestionaire" representedClassName="PoliticalAffiliationQuestionaire" syncable="YES">
+        <attribute name="userPoliticalAffiliationSelection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="politicalAffiliationObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="RaceQuestionaire" representedClassName="RaceQuestionaire" syncable="YES">
+        <attribute name="additionalRaceInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userRaceOptionSelection" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userID" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserID" inverseName="raceObject" inverseEntity="UserID" syncable="YES"/>
+    </entity>
+    <entity name="UserID" representedClassName="UserID" syncable="YES">
+        <attribute name="userID" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <relationship name="ageGroupObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="AgeGroupQuestionaire" inverseName="userID" inverseEntity="AgeGroupQuestionaire" syncable="YES"/>
+        <relationship name="annualHouseholdIncomeObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="AnnualHousholdIncomeQuestionaire" inverseName="userID" inverseEntity="AnnualHousholdIncomeQuestionaire" syncable="YES"/>
+        <relationship name="genderObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="GenderQuestionaire" inverseName="userID" inverseEntity="GenderQuestionaire" syncable="YES"/>
+        <relationship name="mostImportantIssueObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="MostImportantIssueQuestionaire" inverseName="userID" inverseEntity="MostImportantIssueQuestionaire" syncable="YES"/>
+        <relationship name="politicalAffiliationObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="PoliticalAffiliationQuestionaire" inverseName="userID" inverseEntity="PoliticalAffiliationQuestionaire" syncable="YES"/>
+        <relationship name="raceObject" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="RaceQuestionaire" inverseName="userID" inverseEntity="RaceQuestionaire" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AgeGroupQuestionaire" positionX="-254" positionY="-378" width="128" height="75"/>
+        <element name="AnnualHousholdIncomeQuestionaire" positionX="-45" positionY="-252" width="128" height="75"/>
+        <element name="GenderQuestionaire" positionX="16" positionY="-162" width="128" height="90"/>
+        <element name="MostImportantIssueQuestionaire" positionX="43" positionY="-48" width="128" height="75"/>
+        <element name="PoliticalAffiliationQuestionaire" positionX="9" positionY="51" width="128" height="75"/>
+        <element name="RaceQuestionaire" positionX="-126" positionY="135" width="128" height="90"/>
+        <element name="UserID" positionX="-596" positionY="-159" width="128" height="150"/>
+    </elements>
+</model>
