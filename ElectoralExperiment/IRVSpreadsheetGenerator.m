@@ -58,7 +58,7 @@
     NSArray *dataObjectKeys = [IRV_Model allKeys];
     for (NSString *dataObjectKey in dataObjectKeys) {
         NSNumber *voterID = [[IRV_Model valueForKey:dataObjectKey] objectAtIndex:0];
-        NSString *voterChoice = [[IRV_Model valueForKey:dataObjectKey] objectAtIndex:1];
+        NSMutableString *voterChoice = [[[IRV_Model valueForKey:dataObjectKey] objectAtIndex:1] mutableCopy];
         NSString *voterChoiceRankValue = [[IRV_Model valueForKey:dataObjectKey] objectAtIndex:2];
         NSString *voterWriteIn = @"YES";
         
@@ -72,6 +72,9 @@
                 break;
             }
         }
+        
+        // since we are generating a CSV file we need to remove any extreneous commas from our data points and replace it with some other symbol //
+        [voterChoice replaceOccurrencesOfString:@"," withString:@" --" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [voterChoice length])];
         
         NSString *data = [NSString stringWithFormat:@"%u,%@,%@,%@\n",[voterID integerValue],voterChoice,voterChoiceRankValue,voterWriteIn];
         IRV_DataModelString = [IRV_DataModelString stringByAppendingString:data];

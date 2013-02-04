@@ -32,4 +32,11 @@
 
 - (NSURL *)applicationDocumentsDirectory;
 
+#pragma mark - External SQLITE SOURCE SETUP & ACCESS
+- (id)initWith_sqlite_dataBase:(NSURL*)sqliteDB_URLsource;
+// used to setup Core Data from an external sqlite db source //
+- (void) setupCoreDataForReadingInFromAnExternalSQLITEdbSouce:(NSURL*)sqliteDB_URLsource;
+// returns an NSDictionary of enties from the Core Data Store //
+- (NSDictionary*) retrieveAnNSDictionaryOfEntitiesFromCoreDataStore;
+
 @end

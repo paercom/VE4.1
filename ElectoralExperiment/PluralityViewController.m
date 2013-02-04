@@ -63,7 +63,7 @@
         BOOL pluralityFileExists = [FileHandle doesFileWithNameExist:[FileHandle getFilePathForFileWithName:kPluralityDataFileName]];
         // Check to see if Plurality stats data file was created //
         BOOL pluralityStatsFileExists = [FileHandle doesFileWithNameExist:[FileHandle getFilePathForFileWithName:kPluralityStatsFileName]];
-        // Check to see if IRV default messages data file was created //
+        // Check to see if Plurality default messages data file was created //
         BOOL doesMessagesDataFileExist = [FileHandle doesFileWithNameExist:[FileHandle getFilePathForFileWithName:kPluralityMessagesFileName]];
         
         // if file does not exist then create it //

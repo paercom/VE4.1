@@ -19,6 +19,7 @@
 //
 
 #import "ElectoralExperimentAppDelegate.h"
+#import "RootViewController.h"
 #import "MySingelton.h"
 
 @implementation ElectoralExperimentAppDelegate
@@ -38,11 +39,40 @@
     
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    NSLog(@" ...... Root View Controller: <<< %@ >>> ......",[self.navigationController visibleViewController]);
+    
+    // handles any url's sent to this app; will become active for files and weblinks //
+    id rootViewController = [self.navigationController visibleViewController];
+    NSURL *url = (NSURL *)[launchOptions valueForKey:UIApplicationLaunchOptionsURLKey];
+    if ( url != nil && [url isFileURL]) {
+       
+        if ( [rootViewController isKindOfClass:[RootViewController class]] ) {
+            [rootViewController handleOpenURL:url];
+        }        
+    }
+    
+    return YES;
+}
+
+- (BOOL) application:(UIApplication *) application handleOpenURL:(NSURL *)url
+{
+    
+    // handles any url's sent to this app; will become active for files and weblinks //
+    id rootViewController = [self.navigationController visibleViewController];
+    if ( url != nil && [url isFileURL]) {
+        
+        if ( [rootViewController isKindOfClass:[RootViewController class]] ) {
+            [rootViewController handleOpenURL:url];
+        }
+    }
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    // everytime we resign active we pop to the root view since an Open URL request may occure... //
+    [self.navigationController popToRootViewControllerAnimated:NO];
     /*
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

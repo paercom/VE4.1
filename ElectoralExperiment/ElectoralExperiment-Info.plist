@@ -6,6 +6,22 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>VE-4</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Voting Experiment Data File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.aGupieWare.ElectoralExperiment.VE.sqlite</string>
+				<string>com.aGupieWare.ElectoralExperiment.VE.data</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -52,6 +68,43 @@
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Voting Experiment sqlite Data File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.aGupieWare.ElectoralExperiment.VE.sqlite</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>sqlite</string>
+				<key>public.mime-type</key>
+				<string>application/ElectoralExperiment</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Voting Experiment Data File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.aGupieWare.ElectoralExperiment.VE.data</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>data</string>
+				<key>public.mime-type</key>
+				<string>application/ElectoralExperiment</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

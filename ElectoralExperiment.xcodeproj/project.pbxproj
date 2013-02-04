@@ -62,12 +62,15 @@
 		0BCFF675152414F20013C9F0 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF670152414F20013C9F0 /* MainWindow-iPad.xib */; };
 		0BCFF676152414F20013C9F0 /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF672152414F20013C9F0 /* redButton.png */; };
 		0BCFF67915241B250013C9F0 /* purpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF67815241B250013C9F0 /* purpleButton.png */; };
+		0BD054621675027E00F91EE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD054611675027E00F91EE9 /* Default-568h@2x.png */; };
 		0BD301C4149F01D200C68B1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301BE149F01D200C68B1D /* InfoPlist.strings */; };
 		0BD301C5149F01D200C68B1D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301C0149F01D200C68B1D /* MainWindow.xib */; };
 		0BD301C6149F01D200C68B1D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301C2149F01D200C68B1D /* RootViewController.xib */; };
 		0BE4B49C1584D19300B57257 /* RangeSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4B49B1584D19300B57257 /* RangeSpreadsheetGenerator.m */; };
 		0BE4B4A41584E60D00B57257 /* IRVSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4B4A31584E60D00B57257 /* IRVSpreadsheetGenerator.m */; };
 		0BEED89A1584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEED8991584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m */; };
+		0BF2369C166AE87900F53FE6 /* DataImporterThruEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */; };
+		0BF2369D166AE87900F53FE6 /* DataImporterThruEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */; };
 		0BF2961014566ED90083F2A2 /* RangeDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2960E14566ED80083F2A2 /* RangeDataViewerViewController.m */; };
 		0BF2961114566ED90083F2A2 /* RangeDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2960F14566ED90083F2A2 /* RangeDataViewerViewController.xib */; };
 		0BF2961614566EFE0083F2A2 /* RangeStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2961414566EFE0083F2A2 /* RangeStatsViewerViewController.m */; };
@@ -196,6 +199,7 @@
 		0BCFF671152414F20013C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		0BCFF672152414F20013C9F0 /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
 		0BCFF67815241B250013C9F0 /* purpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleButton.png; sourceTree = "<group>"; };
+		0BD054611675027E00F91EE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0BD301BF149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		0BD301C1149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
 		0BD301C3149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +209,9 @@
 		0BE4B4A31584E60D00B57257 /* IRVSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVSpreadsheetGenerator.m; sourceTree = "<group>"; };
 		0BEED8981584EE06007E24B3 /* ApprovalSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalSpreadsheetGenerator.h; sourceTree = "<group>"; };
 		0BEED8991584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0BF23699166AE87900F53FE6 /* DataImporterThruEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataImporterThruEmailViewController.h; sourceTree = "<group>"; };
+		0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataImporterThruEmailViewController.m; sourceTree = "<group>"; };
+		0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataImporterThruEmailViewController.xib; sourceTree = "<group>"; };
 		0BF2960D14566ED80083F2A2 /* RangeDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeDataViewerViewController.h; sourceTree = "<group>"; };
 		0BF2960E14566ED80083F2A2 /* RangeDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeDataViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		0BF2960F14566ED90083F2A2 /* RangeDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeDataViewerViewController.xib; sourceTree = "<group>"; };
@@ -519,6 +526,16 @@
 			path = ElectoralExperiment/en.lproj;
 			sourceTree = "<group>";
 		};
+		0BF23697166AE81600F53FE6 /* Data Importer Thru Email */ = {
+			isa = PBXGroup;
+			children = (
+				0BF23699166AE87900F53FE6 /* DataImporterThruEmailViewController.h */,
+				0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */,
+				0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */,
+			);
+			name = "Data Importer Thru Email";
+			sourceTree = "<group>";
+		};
 		0BF296181457CDFB0083F2A2 /* IRVfiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +594,7 @@
 		0BF4B1B6144F4A5C00543234 = {
 			isa = PBXGroup;
 			children = (
+				0BD054611675027E00F91EE9 /* Default-568h@2x.png */,
 				0BF5620615EA6AAE00C11732 /* CoreData.framework */,
 				0B7D5BDB15CE234000C76A57 /* MakeVotingCount.png */,
 				0BB4EF11152699CF002279B4 /* MessageUI.framework */,
@@ -655,6 +673,7 @@
 		0BF4B1F314509EA000543234 /* AdminFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0BF23697166AE81600F53FE6 /* Data Importer Thru Email */,
 				0B4B89321579CC29006C4937 /* Admin View */,
 				0B4B892C1579CB72006C4937 /* Create Candidate/Item List */,
 				0B4B892D1579CBA2006C4937 /* IRV User Messages */,
@@ -780,6 +799,8 @@
 				0B7D5BE215CE2EFD00C76A57 /* UserDemographicsViewController.xib in Resources */,
 				0BF5622815EAF95600C11732 /* UserDemographicTableViewController.xib in Resources */,
 				0BF5622A15EAFECA00C11732 /* UserDemographicCell.xib in Resources */,
+				0BF2369D166AE87900F53FE6 /* DataImporterThruEmailViewController.xib in Resources */,
+				0BD054621675027E00F91EE9 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +863,7 @@
 				0BF5622115EAECF800C11732 /* UserID.m in Sources */,
 				0BF5622715EAF95600C11732 /* UserDemographicTableViewController.m in Sources */,
 				0BF5622D15EAFF0F00C11732 /* UserDemographicCell.m in Sources */,
+				0BF2369C166AE87900F53FE6 /* DataImporterThruEmailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +989,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -974,7 +997,8 @@
 				INFOPLIST_FILE = "ElectoralExperiment/ElectoralExperiment-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = ElectoralExperiment;
-				TARGETED_DEVICE_FAMILY = 2;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -989,7 +1013,7 @@
 				INFOPLIST_FILE = "ElectoralExperiment/ElectoralExperiment-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = ElectoralExperiment;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

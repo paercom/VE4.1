@@ -1,8 +1,8 @@
 //
-//  PluralitySpreadsheetGenerator.h
-//  ElectoralExperiment3
+//  DataImporterThruEmailViewController.h
+//  ElectoralExperiment
 //
-//  Created by Stefan Agapie on 6/5/12.
+//  Created by Stefan Agapie on 12/1/12.
 //  Copyright 2011 Stefan Agapie. All rights reserved.
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PluralitySpreadsheetGenerator : NSObject
+@interface DataImporterThruEmailViewController : UIViewController
 
-+(void)generatePluralitySreadsheetDataSet;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andWithEmailImportedDataDictionary:(NSDictionary*)importedDataDictionary fromURL:(NSURL*)sourcURL;
 
 @end

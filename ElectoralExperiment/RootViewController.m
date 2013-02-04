@@ -28,6 +28,7 @@
 #import "FileHandle.h"
 #import "SizeConstants.h"
 #import "UserDemographicsViewController.h"
+#import "DataImporterThruEmailViewController.h"
 
 #import "MySingelton.h"
 
@@ -78,6 +79,54 @@
     
 }
 //*************************************************************
+
+#pragma mark - Data Import via Mail Client Methods
+- (void) handleOpenURL:(NSURL *)url
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    [self importFromURL:url];    
+}
+
+- (void) importFromURL:(NSURL *)importURL
+{
+    
+    id importedData = [[[NSDictionary alloc] initWithContentsOfURL:importURL] autorelease];
+    
+    if (importedData == nil) {
+        
+        // see if it's an NSArray type... //
+        NSArray *importedArray = [[[NSArray alloc] initWithContentsOfURL:importURL] autorelease];        
+        if (importedArray) {
+            importedData = [[[NSDictionary alloc] initWithObjectsAndKeys:importedArray,@"candidateList", nil] autorelease];
+        }
+    }
+    
+    if (importedData == nil) {
+        // see if it's an Electoral Experiment sqlite type... //
+        UIDocument *importedDoc = [[UIDocument alloc] initWithFileURL:importURL];        
+        if ([importedDoc.fileType.lowercaseString isEqualToString:@"com.aGupieWare.ElectoralExperiment.VE.sqlite".lowercaseString]) {
+            importedData = [[[NSDictionary alloc] initWithObjectsAndKeys:importURL,@"UserDemographic", nil] autorelease];
+        }
+    }   
+    
+    // if the importedDictionary is nil then there is an error or the contents of the resources are an invalid representation of a dictionary. //
+    if (importedData) {
+        
+        DataImporterThruEmailViewController *handleFileImportObj = [[[DataImporterThruEmailViewController alloc] initWithNibName:@"DataImporterThruEmailViewController" bundle:nil andWithEmailImportedDataDictionary:importedData fromURL:importURL] autorelease];
+        
+        [self.navigationController pushViewController:handleFileImportObj animated:YES];
+    }
+    else {
+        
+        NSString *message = @"The selected data file is either of an invalid type or an error occured while trying to import the selected file.";
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Data File" message:message delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+        [alert show];
+        [alert release], alert = nil;
+    }
+    
+    
+}
 
 #pragma mark - View Life Cycle
 

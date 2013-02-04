@@ -46,6 +46,30 @@
 #pragma mark
 #pragma mark View Life Cycle
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -55,9 +79,29 @@
     return self;
 }
 
+- (id)initWith_sqlite_dataBase:(NSURL*)sqliteDB_URLsource
+{
+    self = [super init];
+    if (self) {
+        [self setupCoreDataForReadingInFromAnExternalSQLITEdbSouce:sqliteDB_URLsource];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //[self setup];
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)setup {
     
     NSError *error;
     if ( ![[self fetchedResultsController] performFetch:&error]) {
@@ -66,12 +110,6 @@
         
     }
     self.title = @"User Demographic Database Viewer";
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -257,6 +295,114 @@
     cell.userMostImportantIssueTextView.text = dataString;
     
     return cell;
+}
+
+#pragma mark - External SQLITE SOURCE SETUP & ACCESS
+// used to setup Core Data from an external sqlite db source //
+- (void) setupCoreDataForReadingInFromAnExternalSQLITEdbSouce:(NSURL*)sqliteDB_URLsource
+{
+    // if the model doesn't already exist, it is created from the application's model //
+    // --------------------------------------------------------- //
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"DemographicsDBModel" withExtension:@"momd"];
+    
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    // --------------------------------------------------------- //
+    
+    
+    // if the coordinator doesn't already esist, it is created and the application's store added to it //
+    // --------------------------------------------------------- //
+//    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:kUserDemographicDataBaseName];
+    NSURL *storeURL = sqliteDB_URLsource;
+    
+    NSError *error_psc = nil;
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
+    
+    id victory = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                           configuration:nil
+                                                                     URL:storeURL
+                                                                 options:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],@"NSReadOnlyPersistentStoreOption", nil]
+                                                                   error:&error_psc];
+    
+    // NSReadOnlyPersistentStoreOption
+    
+    if (victory == nil) {
+        NSLog(@"Unable to create the Persistent Store Coordinator, Error: %@",[error_psc localizedDescription]);
+    }
+    // --------------------------------------------------------- //
+    
+    
+    // if the context doesn't already exist, it is created and bound to the persistent store coordinator for the application //
+    // --------------------------------------------------------- //
+//    NSPersistentStoreCoordinator *coordinator = self.persistentStoreCoordinator;
+    
+    if (_persistentStoreCoordinator != nil) {
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
+    }
+    // --------------------------------------------------------- //
+    
+    
+    // --------------------------------------------------------- //
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"UserID"
+                                              inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"userID" ascending:YES];
+    
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    [fetchRequest setFetchBatchSize:20];
+    
+    _fetchedResultsController = [[NSFetchedResultsController alloc]
+                                 initWithFetchRequest:fetchRequest
+                                 managedObjectContext:self.managedObjectContext
+                                 sectionNameKeyPath:nil
+                                 cacheName:@"Root"];
+    _fetchedResultsController.delegate = self;
+    // --------------------------------------------------------- //
+    
+    NSError *error_frc;
+    if ( ![[self fetchedResultsController] performFetch:&error_frc]) {
+        
+        NSLog(@"Unresolved Error %@, %@",error_frc,[error_frc userInfo]);
+        
+    }
+}
+// returns an NSDictionary of enties from the Core Data Store //
+- (NSDictionary*) retrieveAnNSDictionaryOfEntitiesFromCoreDataStore
+{
+    NSArray *sections = [self.fetchedResultsController sections];
+    
+    NSMutableDictionary *dataStoreEntities = [[[NSMutableDictionary alloc] init] autorelease];
+    
+    // iterate thru the sections //
+    for (NSUInteger section = 0; section < [sections count]; section++) {       
+        
+        // iterate thru the row objects given a section //
+        id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
+        for (NSUInteger row = 0; row < [sectionInfo numberOfObjects]; row++) {
+            
+            NSMutableDictionary *dataEntity = [[NSMutableDictionary alloc] init];
+            
+            UserID *user = [self.fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section]];
+            
+            [dataEntity setValue:user.userID                         forKey:@"userID.description"];
+            [dataEntity setValue:user.genderObject                   forKey:@"genderObject.description"];
+            [dataEntity setValue:user.ageGroupObject                 forKey:@"ageGroupObject.description"];
+            [dataEntity setValue:user.raceObject                     forKey:@"raceObject.description"];
+            [dataEntity setValue:user.politicalAffiliationObject     forKey:@"politicalAffiliationObject.description"];
+            [dataEntity setValue:user.annualHouseholdIncomeObject    forKey:@"annualHouseholdIncomeObject.description"];
+            [dataEntity setValue:user.mostImportantIssueObject       forKey:@"mostImportantIssueObject.description"];
+            
+//            NSLog(@" ...... Data Entity: <<< %@ >>> ......\n\n",dataEntity);
+            
+            [dataStoreEntities setObject:dataEntity forKey:user.userID.stringValue];
+            
+            [dataEntity release], dataEntity = nil;            
+        }        
+    }
+    return dataStoreEntities;
 }
 
 @end

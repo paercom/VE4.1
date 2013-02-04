@@ -94,7 +94,8 @@
                                kRangeSpreadsheetDataSetFilename,
                                kIRVSpreadsheetDataSetFilename,
                                kApprovalSpreadsheetDataSetFilename,
-                               kUserDemographicDataBaseName,nil];
+                               kUserDemographicDataBaseName,
+                               kCandidateFileName,nil];
     
     for (NSString *filename in fileNamesArray) {
         filepath = [FileHandle getFilePathForFileWithName:filename];

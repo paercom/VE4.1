@@ -29,6 +29,8 @@
 }
 @property(nonatomic, retain) NSArray *electoralExperimentList;
 
--(void) launchTheNexExperiment; 
+- (void) launchTheNexExperiment;
+
+- (void) handleOpenURL:(NSURL *)url;
 
 @end

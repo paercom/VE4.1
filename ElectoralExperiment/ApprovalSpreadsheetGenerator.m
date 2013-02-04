@@ -56,7 +56,7 @@
     NSArray *dataObjectKeys = [approvalModel allKeys];
     for (NSString *dataObjectKey in dataObjectKeys) {
         NSNumber *voterID = [[approvalModel valueForKey:dataObjectKey] objectAtIndex:0];
-        NSString *voterDataItem = [[approvalModel valueForKey:dataObjectKey] objectAtIndex:1];
+        NSMutableString *voterDataItem = [[[approvalModel valueForKey:dataObjectKey] objectAtIndex:1] mutableCopy];
         NSString *voterDataItemValue = [[approvalModel valueForKey:dataObjectKey] objectAtIndex:2];
         NSString *voterWriteIn = @"YES";
         
@@ -70,6 +70,9 @@
                 break;
             }
         }
+        
+        // since we are generating a CSV file we need to remove any extreneous commas from our data points and replace it with some other symbol //
+        [voterDataItem replaceOccurrencesOfString:@"," withString:@" --" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [voterDataItem length])];
         
         // convert 0, and 1 Boolean values to YES, and NO data strings, respectivley -- note: 0 == YES, 1 == NO (sorry! Bad design...) //
         if ([voterDataItemValue isEqualToString:@"0"]) {

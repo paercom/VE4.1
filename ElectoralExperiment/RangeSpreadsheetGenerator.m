@@ -57,7 +57,7 @@
     NSArray *dataObjectKeys = [rangeModel allKeys];
     for (NSString *dataObjectKey in dataObjectKeys) {
         NSNumber *voterID = [[rangeModel valueForKey:dataObjectKey] objectAtIndex:0];
-        NSString *voterItem = [[rangeModel valueForKey:dataObjectKey] objectAtIndex:1];
+        NSMutableString *voterItem = [[[rangeModel valueForKey:dataObjectKey] objectAtIndex:1] mutableCopy];
         NSString *voterItemRangeValue = [[rangeModel valueForKey:dataObjectKey] objectAtIndex:2];
         NSString *voterWriteIn = @"YES";
         
@@ -71,6 +71,10 @@
                 break;
             }
         }
+        
+        // since we are generating a CSV file we need to remove any extreneous commas from our data points and replace it with some other symbol //
+        [voterItem replaceOccurrencesOfString:@"," withString:@" --" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [voterItem length])];
+        
         
         NSString *data = [NSString stringWithFormat:@"%u,%@,%@,%@\n",[voterID integerValue],voterItem,voterItemRangeValue,voterWriteIn];
         rangeDataModelString = [rangeDataModelString stringByAppendingString:data];

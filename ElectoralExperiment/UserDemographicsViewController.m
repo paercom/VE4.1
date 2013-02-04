@@ -19,6 +19,7 @@
 //
 
 #import "UserDemographicsViewController.h"
+#import "UserDemographicTableViewController.h"
 #import "FileHandle.h"
 #import "ElectoralExperiments.h"
 
@@ -119,7 +120,7 @@ typedef enum {
 - (NSMutableArray*)partyAffiliationArray
 {
     if (_partyAffiliationArray == nil) {
-        _partyAffiliationArray = [[NSMutableArray alloc] initWithObjects:@" -- Scroll to Select an Option -- ", nil];
+        _partyAffiliationArray = [[NSMutableArray alloc] initWithObjects:@" :: Scroll to Select an Option :: ", nil];
         NSString *filepath = [FileHandle getFilePathForFileWithName:kCandidateFileName];
         //[_partyAffiliationArray addObjectsFromArray:[NSArray arrayWithContentsOfFile:filepath]];        
         for (NSString *item in [NSArray arrayWithContentsOfFile:filepath]) {
@@ -201,7 +202,62 @@ typedef enum {
 
 #pragma mark
 #pragma mark Core Data Creating a New Entry
+// used to create new entries from an existing data set //
+- (void)saveUserDemographicsToDataStoreGivenData:(NSDictionary*)incommingDataDictionary withNewUserIDoffsetValue:(NSInteger) newUserID_offset
+{
+    
+    // create the NSManaged Objects //
+    // --------------------------------------------------------------------------- //
+    UserID *userID;
+    RaceQuestionaire *raceQuestionaire;
+    GenderQuestionaire *genderQuestionaire;
+    AgeGroupQuestionaire *ageGroupQuestionaire;
+    MostImportantIssueQuestionaire *mostImportantIssueQuestionare;
+    AnnualHousholdIncomeQuestionaire *annualHouseholdIncomeQuestionaire;
+    PoliticalAffiliationQuestionaire *politicalAffiliationQuestionaire;
+    
+    userID = [NSEntityDescription insertNewObjectForEntityForName:@"UserID" inManagedObjectContext:self.managedObjectContext];
+    raceQuestionaire = [NSEntityDescription insertNewObjectForEntityForName:@"RaceQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    genderQuestionaire = [NSEntityDescription insertNewObjectForEntityForName:@"GenderQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    ageGroupQuestionaire = [NSEntityDescription insertNewObjectForEntityForName:@"AgeGroupQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    mostImportantIssueQuestionare = [NSEntityDescription insertNewObjectForEntityForName:@"MostImportantIssueQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    annualHouseholdIncomeQuestionaire = [NSEntityDescription insertNewObjectForEntityForName:@"AnnualHousholdIncomeQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    politicalAffiliationQuestionaire = [NSEntityDescription insertNewObjectForEntityForName:@"PoliticalAffiliationQuestionaire" inManagedObjectContext:self.managedObjectContext];
+    // --------------------------------------------------------------------------- //
+    
+    // set the user's demographics data for each table... //
+    userID.userID = [NSNumber numberWithInteger:newUserID_offset + ((NSNumber*)[incommingDataDictionary valueForKey:@"userID.description"]).integerValue];
+    genderQuestionaire.userGenderSelection = [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"userGenderSelection"];
+    genderQuestionaire.additionalGenderInformation = [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"additionalGenderInformation"];
+    ageGroupQuestionaire.userAgeGroupSelection = [[incommingDataDictionary valueForKey:@"ageGroupObject.description"] valueForKey:@"userAgeGroupSelection"];
+    raceQuestionaire.userRaceOptionSelection = [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"userRaceOptionSelection"];
+    raceQuestionaire.additionalRaceInformation = [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"additionalRaceInformation"];
+    politicalAffiliationQuestionaire.userPoliticalAffiliationSelection = [[incommingDataDictionary valueForKey:@"politicalAffiliationObject.description"] valueForKey:@"userPoliticalAffiliationSelection"];
+    annualHouseholdIncomeQuestionaire.userAnnualHousholdIncomeSelection = [[incommingDataDictionary valueForKey:@"annualHouseholdIncomeObject.description"] valueForKey:@"userAnnualHousholdIncomeSelection"];
+    mostImportantIssueQuestionare.userAnswer = [[incommingDataDictionary valueForKey:@"mostImportantIssueObject.description"] valueForKey:@"userAnswer"];
+        
+    // set relationships... //
+    userID.raceObject = raceQuestionaire;
+    userID.genderObject = genderQuestionaire;
+    userID.ageGroupObject = ageGroupQuestionaire;
+    userID.mostImportantIssueObject = mostImportantIssueQuestionare;
+    userID.annualHouseholdIncomeObject = annualHouseholdIncomeQuestionaire;
+    userID.politicalAffiliationObject = politicalAffiliationQuestionaire;
+    raceQuestionaire.userID = userID;
+    genderQuestionaire.userID = userID;
+    ageGroupQuestionaire.userID = userID;
+    mostImportantIssueQuestionare.userID = userID;
+    annualHouseholdIncomeQuestionaire.userID = userID;
+    politicalAffiliationQuestionaire.userID = userID;
+    
+    // save the managed object context //
+    NSError *error;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
 
+// used to create new entry from the user interface //
 - (void)saveUserDemographicsToDataStore
 {
     // create the NSManaged Objects //

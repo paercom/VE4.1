@@ -57,4 +57,7 @@
 @property (retain, nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
 @property (retain, nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
 
+// used to create new entries from an existing data set //
+- (void)saveUserDemographicsToDataStoreGivenData:(NSDictionary*)incommingDataDictionary withNewUserIDoffsetValue:(NSInteger) newUserID_offset;
+
 @end
