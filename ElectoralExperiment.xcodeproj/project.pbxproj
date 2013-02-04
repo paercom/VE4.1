@@ -133,6 +133,7 @@
 		0B36A02A16BF901F0017B936 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC316BF901F0017B936 /* README.txt */; };
 		0B36A02B16BF901F0017B936 /* Terms And Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC416BF901F0017B936 /* Terms And Conditions.pdf */; };
 		0B36A02C16BF901F0017B936 /* Terms And Conditions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC516BF901F0017B936 /* Terms And Conditions.rtf */; };
+		0B36A02E16BF906F0017B936 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0B36A02D16BF906F0017B936 /* .gitignore */; };
 		0B4B89381579CED5006C4937 /* IRV_ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B89361579CED5006C4937 /* IRV_ResultsViewController.m */; };
 		0B4B89391579CED5006C4937 /* IRV_ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4B89371579CED5006C4937 /* IRV_ResultsViewController.xib */; };
 		0B654B1B1524C235005F8DE1 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B0F1524C235005F8DE1 /* blueButton.png */; };
@@ -418,6 +419,7 @@
 		0B369FC316BF901F0017B936 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		0B369FC416BF901F0017B936 /* Terms And Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Terms And Conditions.pdf"; sourceTree = "<group>"; };
 		0B369FC516BF901F0017B936 /* Terms And Conditions.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Terms And Conditions.rtf"; sourceTree = "<group>"; };
+		0B36A02D16BF906F0017B936 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B4B89351579CED5006C4937 /* IRV_ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRV_ResultsViewController.h; sourceTree = "<group>"; };
 		0B4B89361579CED5006C4937 /* IRV_ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRV_ResultsViewController.m; sourceTree = "<group>"; };
 		0B4B89371579CED5006C4937 /* IRV_ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRV_ResultsViewController.xib; sourceTree = "<group>"; };
@@ -1024,6 +1026,7 @@
 		0BF4B1B6144F4A5C00543234 = {
 			isa = PBXGroup;
 			children = (
+				0B36A02D16BF906F0017B936 /* .gitignore */,
 				0B369F2116BF901E0017B936 /* ElectoralExperiment */,
 				0B369FC216BF901F0017B936 /* MakeVotingCount.psd */,
 				0B369FC316BF901F0017B936 /* README.txt */,
@@ -1286,6 +1289,7 @@
 				0B36A02A16BF901F0017B936 /* README.txt in Resources */,
 				0B36A02B16BF901F0017B936 /* Terms And Conditions.pdf in Resources */,
 				0B36A02C16BF901F0017B936 /* Terms And Conditions.rtf in Resources */,
+				0B36A02E16BF906F0017B936 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
