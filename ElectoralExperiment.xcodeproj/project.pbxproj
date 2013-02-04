@@ -1,0 +1,1639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B195891145F917200F46E5D /* ApprovalDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19588F145F917200F46E5D /* ApprovalDataViewerViewController.m */; };
+		0B195892145F917200F46E5D /* ApprovalDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B195890145F917200F46E5D /* ApprovalDataViewerViewController.xib */; };
+		0B195897145F919F00F46E5D /* ApprovalStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B195895145F919F00F46E5D /* ApprovalStatsViewerViewController.m */; };
+		0B195898145F919F00F46E5D /* ApprovalStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B195896145F919F00F46E5D /* ApprovalStatsViewerViewController.xib */; };
+		0B19589E145FA51700F46E5D /* MySingelton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B19589D145FA51600F46E5D /* MySingelton.m */; };
+		0B2EB410150FCEF8004E7AC5 /* CandidateWriteInPluralitycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EB40F150FCEF8004E7AC5 /* CandidateWriteInPluralitycell.xib */; };
+		0B2EB413150FCFBD004E7AC5 /* CandidateWriteInPluralitycell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EB412150FCFBD004E7AC5 /* CandidateWriteInPluralitycell.m */; };
+		0B2EB417150FD6D8004E7AC5 /* CandidatePluralitycell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EB416150FD6D7004E7AC5 /* CandidatePluralitycell.m */; };
+		0B2EB419150FD6F2004E7AC5 /* CandidatePluralitycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EB418150FD6F1004E7AC5 /* CandidatePluralitycell.xib */; };
+		0B2EB4221511A7F0004E7AC5 /* PluralityInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EB4201511A7EE004E7AC5 /* PluralityInstructionsViewController.m */; };
+		0B2EB4231511A7F0004E7AC5 /* PluralityInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EB4211511A7EF004E7AC5 /* PluralityInstructionsViewController.xib */; };
+		0B36154A14527DEA006E6EDD /* PluralityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B36154814527DEA006E6EDD /* PluralityViewController.m */; };
+		0B36154B14527DEA006E6EDD /* PluralityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36154914527DEA006E6EDD /* PluralityViewController.xib */; };
+		0B36155014544FEF006E6EDD /* PluralityDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B36154E14544FEF006E6EDD /* PluralityDataViewerViewController.m */; };
+		0B36155114544FEF006E6EDD /* PluralityDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36154F14544FEF006E6EDD /* PluralityDataViewerViewController.xib */; };
+		0B361555145454AC006E6EDD /* PluralityStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B361553145454AB006E6EDD /* PluralityStatsViewerViewController.m */; };
+		0B361556145454AC006E6EDD /* PluralityStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B361554145454AB006E6EDD /* PluralityStatsViewerViewController.xib */; };
+		0B36155B14551E33006E6EDD /* RangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B36155914551E33006E6EDD /* RangeViewController.m */; };
+		0B36155C14551E33006E6EDD /* RangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36155A14551E33006E6EDD /* RangeViewController.xib */; };
+		0B36156414560701006E6EDD /* RangeViewCandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36156314560701006E6EDD /* RangeViewCandidateCell.xib */; };
+		0B36156614560716006E6EDD /* RangeViewCandidateWriteInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B36156514560716006E6EDD /* RangeViewCandidateWriteInCell.xib */; };
+		0B3615691456193E006E6EDD /* CandidateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3615681456193E006E6EDD /* CandidateCell.m */; };
+		0B36156C14561956006E6EDD /* CandidateWriteInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B36156B14561956006E6EDD /* CandidateWriteInCell.m */; };
+		0B369FC616BF901F0017B936 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F2416BF901E0017B936 /* AdminViewController.m */; };
+		0B369FC716BF901F0017B936 /* AdminViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F2516BF901E0017B936 /* AdminViewController.xib */; };
+		0B369FC816BF901F0017B936 /* AgeGroupQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F2716BF901E0017B936 /* AgeGroupQuestionaire.m */; };
+		0B369FC916BF901F0017B936 /* AnnualHousholdIncomeQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F2916BF901E0017B936 /* AnnualHousholdIncomeQuestionaire.m */; };
+		0B369FCA16BF901F0017B936 /* ApprovalDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F2B16BF901E0017B936 /* ApprovalDataViewerViewController.m */; };
+		0B369FCB16BF901F0017B936 /* ApprovalDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F2C16BF901E0017B936 /* ApprovalDataViewerViewController.xib */; };
+		0B369FCC16BF901F0017B936 /* ApprovalInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F2E16BF901E0017B936 /* ApprovalInstructionsViewController.m */; };
+		0B369FCD16BF901F0017B936 /* ApprovalInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F2F16BF901E0017B936 /* ApprovalInstructionsViewController.xib */; };
+		0B369FCE16BF901F0017B936 /* ApprovalMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F3116BF901E0017B936 /* ApprovalMessagesViewController.m */; };
+		0B369FCF16BF901F0017B936 /* ApprovalMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F3216BF901E0017B936 /* ApprovalMessagesViewController.xib */; };
+		0B369FD016BF901F0017B936 /* ApprovalSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F3416BF901E0017B936 /* ApprovalSpreadsheetGenerator.m */; };
+		0B369FD116BF901F0017B936 /* ApprovalStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F3616BF901E0017B936 /* ApprovalStatsViewerViewController.m */; };
+		0B369FD216BF901F0017B936 /* ApprovalStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F3716BF901E0017B936 /* ApprovalStatsViewerViewController.xib */; };
+		0B369FD316BF901F0017B936 /* ApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F3916BF901E0017B936 /* ApprovalViewController.m */; };
+		0B369FD416BF901F0017B936 /* ApprovalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F3A16BF901E0017B936 /* ApprovalViewController.xib */; };
+		0B369FD516BF901F0017B936 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F3B16BF901E0017B936 /* blueButton.png */; };
+		0B369FD616BF901F0017B936 /* CandidateApprovalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F3D16BF901E0017B936 /* CandidateApprovalCell.m */; };
+		0B369FD716BF901F0017B936 /* CandidateApprovalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F3E16BF901E0017B936 /* CandidateApprovalCell.xib */; };
+		0B369FD816BF901F0017B936 /* CandidateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4016BF901E0017B936 /* CandidateCell.m */; };
+		0B369FD916BF901F0017B936 /* CandidateIRVcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4216BF901E0017B936 /* CandidateIRVcell.m */; };
+		0B369FDA16BF901F0017B936 /* CandidateIRVcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F4316BF901E0017B936 /* CandidateIRVcell.xib */; };
+		0B369FDB16BF901F0017B936 /* CandidatePluralitycell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4516BF901E0017B936 /* CandidatePluralitycell.m */; };
+		0B369FDC16BF901F0017B936 /* CandidatePluralitycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F4616BF901E0017B936 /* CandidatePluralitycell.xib */; };
+		0B369FDD16BF901F0017B936 /* CandidateWriteInApprovalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4816BF901E0017B936 /* CandidateWriteInApprovalCell.m */; };
+		0B369FDE16BF901F0017B936 /* CandidateWriteInApprovalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F4916BF901E0017B936 /* CandidateWriteInApprovalCell.xib */; };
+		0B369FDF16BF901F0017B936 /* CandidateWriteInCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4B16BF901E0017B936 /* CandidateWriteInCell.m */; };
+		0B369FE016BF901F0017B936 /* CandidateWriteInIRVcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F4D16BF901E0017B936 /* CandidateWriteInIRVcell.m */; };
+		0B369FE116BF901F0017B936 /* CandidateWriteInIRVcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F4E16BF901E0017B936 /* CandidateWriteInIRVcell.xib */; };
+		0B369FE216BF901F0017B936 /* CandidateWriteInPluralitycell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F5016BF901E0017B936 /* CandidateWriteInPluralitycell.m */; };
+		0B369FE316BF901F0017B936 /* CandidateWriteInPluralitycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F5116BF901E0017B936 /* CandidateWriteInPluralitycell.xib */; };
+		0B369FE416BF901F0017B936 /* CreateCandidateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F5316BF901E0017B936 /* CreateCandidateListViewController.m */; };
+		0B369FE516BF901F0017B936 /* CreateCandidateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F5416BF901E0017B936 /* CreateCandidateListViewController.xib */; };
+		0B369FE616BF901F0017B936 /* DataImporterThruEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F5616BF901E0017B936 /* DataImporterThruEmailViewController.m */; };
+		0B369FE716BF901F0017B936 /* DataImporterThruEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F5716BF901E0017B936 /* DataImporterThruEmailViewController.xib */; };
+		0B369FE816BF901F0017B936 /* DemographicsDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F5816BF901E0017B936 /* DemographicsDBModel.xcdatamodeld */; };
+		0B369FE916BF901F0017B936 /* ElectoralExperiment-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F5A16BF901E0017B936 /* ElectoralExperiment-Info.plist */; };
+		0B369FEA16BF901F0017B936 /* ElectoralExperimentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F5D16BF901E0017B936 /* ElectoralExperimentAppDelegate.m */; };
+		0B369FEB16BF901F0017B936 /* EmailComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F6016BF901E0017B936 /* EmailComposerViewController.m */; };
+		0B369FEC16BF901F0017B936 /* EmailComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6116BF901E0017B936 /* EmailComposerViewController.xib */; };
+		0B369FED16BF901F0017B936 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6216BF901E0017B936 /* InfoPlist.strings */; };
+		0B369FEE16BF901F0017B936 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6416BF901E0017B936 /* MainWindow.xib */; };
+		0B369FEF16BF901F0017B936 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6616BF901E0017B936 /* RootViewController.xib */; };
+		0B369FF016BF901F0017B936 /* FileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F6916BF901E0017B936 /* FileHandle.m */; };
+		0B369FF116BF901F0017B936 /* GenderQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F6B16BF901E0017B936 /* GenderQuestionaire.m */; };
+		0B369FF216BF901F0017B936 /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6C16BF901E0017B936 /* greenButton.png */; };
+		0B369FF316BF901F0017B936 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F6E16BF901E0017B936 /* MainWindow-iPad.xib */; };
+		0B369FF416BF901F0017B936 /* IRV_ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7116BF901E0017B936 /* IRV_ResultsViewController.m */; };
+		0B369FF516BF901F0017B936 /* IRV_ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F7216BF901E0017B936 /* IRV_ResultsViewController.xib */; };
+		0B369FF616BF901F0017B936 /* IRVdataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7416BF901E0017B936 /* IRVdataViewerViewController.m */; };
+		0B369FF716BF901F0017B936 /* IRVdataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F7516BF901E0017B936 /* IRVdataViewerViewController.xib */; };
+		0B369FF816BF901F0017B936 /* IRVinstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7716BF901E0017B936 /* IRVinstructionsViewController.m */; };
+		0B369FF916BF901F0017B936 /* IRVinstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F7816BF901E0017B936 /* IRVinstructionsViewController.xib */; };
+		0B369FFA16BF901F0017B936 /* IRVmessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7A16BF901E0017B936 /* IRVmessagesViewController.m */; };
+		0B369FFB16BF901F0017B936 /* IRVmessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F7B16BF901E0017B936 /* IRVmessagesViewController.xib */; };
+		0B369FFC16BF901F0017B936 /* IRVSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7D16BF901E0017B936 /* IRVSpreadsheetGenerator.m */; };
+		0B369FFD16BF901F0017B936 /* IRVstatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F7F16BF901F0017B936 /* IRVstatsViewerViewController.m */; };
+		0B369FFE16BF901F0017B936 /* IRVstatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F8016BF901F0017B936 /* IRVstatsViewerViewController.xib */; };
+		0B369FFF16BF901F0017B936 /* IRVviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8216BF901F0017B936 /* IRVviewController.m */; };
+		0B36A00016BF901F0017B936 /* IRVviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F8316BF901F0017B936 /* IRVviewController.xib */; };
+		0B36A00116BF901F0017B936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8416BF901F0017B936 /* main.m */; };
+		0B36A00216BF901F0017B936 /* MostImportantIssueQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8616BF901F0017B936 /* MostImportantIssueQuestionaire.m */; };
+		0B36A00316BF901F0017B936 /* MySingelton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8816BF901F0017B936 /* MySingelton.m */; };
+		0B36A00416BF901F0017B936 /* PluralityDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8A16BF901F0017B936 /* PluralityDataViewerViewController.m */; };
+		0B36A00516BF901F0017B936 /* PluralityDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F8B16BF901F0017B936 /* PluralityDataViewerViewController.xib */; };
+		0B36A00616BF901F0017B936 /* PluralityInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F8D16BF901F0017B936 /* PluralityInstructionsViewController.m */; };
+		0B36A00716BF901F0017B936 /* PluralityInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F8E16BF901F0017B936 /* PluralityInstructionsViewController.xib */; };
+		0B36A00816BF901F0017B936 /* PluralityMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9016BF901F0017B936 /* PluralityMessagesViewController.m */; };
+		0B36A00916BF901F0017B936 /* PluralityMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F9116BF901F0017B936 /* PluralityMessagesViewController.xib */; };
+		0B36A00A16BF901F0017B936 /* PluralitySpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9316BF901F0017B936 /* PluralitySpreadsheetGenerator.m */; };
+		0B36A00B16BF901F0017B936 /* PluralityStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9516BF901F0017B936 /* PluralityStatsViewerViewController.m */; };
+		0B36A00C16BF901F0017B936 /* PluralityStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F9616BF901F0017B936 /* PluralityStatsViewerViewController.xib */; };
+		0B36A00D16BF901F0017B936 /* PluralityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9816BF901F0017B936 /* PluralityViewController.m */; };
+		0B36A00E16BF901F0017B936 /* PluralityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F9916BF901F0017B936 /* PluralityViewController.xib */; };
+		0B36A00F16BF901F0017B936 /* PoliticalAffiliationQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9B16BF901F0017B936 /* PoliticalAffiliationQuestionaire.m */; };
+		0B36A01016BF901F0017B936 /* purpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B369F9C16BF901F0017B936 /* purpleButton.png */; };
+		0B36A01116BF901F0017B936 /* RaceQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369F9E16BF901F0017B936 /* RaceQuestionaire.m */; };
+		0B36A01216BF901F0017B936 /* RangeDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FA016BF901F0017B936 /* RangeDataViewerViewController.m */; };
+		0B36A01316BF901F0017B936 /* RangeDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FA116BF901F0017B936 /* RangeDataViewerViewController.xib */; };
+		0B36A01416BF901F0017B936 /* RangeInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FA316BF901F0017B936 /* RangeInstructionsViewController.m */; };
+		0B36A01516BF901F0017B936 /* RangeInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FA416BF901F0017B936 /* RangeInstructionsViewController.xib */; };
+		0B36A01616BF901F0017B936 /* RangeMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FA616BF901F0017B936 /* RangeMessagesViewController.m */; };
+		0B36A01716BF901F0017B936 /* RangeMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FA716BF901F0017B936 /* RangeMessagesViewController.xib */; };
+		0B36A01816BF901F0017B936 /* RangeSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FA916BF901F0017B936 /* RangeSpreadsheetGenerator.m */; };
+		0B36A01916BF901F0017B936 /* RangeStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FAB16BF901F0017B936 /* RangeStatsViewerViewController.m */; };
+		0B36A01A16BF901F0017B936 /* RangeStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FAC16BF901F0017B936 /* RangeStatsViewerViewController.xib */; };
+		0B36A01B16BF901F0017B936 /* RangeViewCandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FAD16BF901F0017B936 /* RangeViewCandidateCell.xib */; };
+		0B36A01C16BF901F0017B936 /* RangeViewCandidateWriteInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FAE16BF901F0017B936 /* RangeViewCandidateWriteInCell.xib */; };
+		0B36A01D16BF901F0017B936 /* RangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FB016BF901F0017B936 /* RangeViewController.m */; };
+		0B36A01E16BF901F0017B936 /* RangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FB116BF901F0017B936 /* RangeViewController.xib */; };
+		0B36A01F16BF901F0017B936 /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FB216BF901F0017B936 /* redButton.png */; };
+		0B36A02016BF901F0017B936 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FB416BF901F0017B936 /* RootViewController.m */; };
+		0B36A02116BF901F0017B936 /* UserDemographicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FB716BF901F0017B936 /* UserDemographicCell.m */; };
+		0B36A02216BF901F0017B936 /* UserDemographicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FB816BF901F0017B936 /* UserDemographicCell.xib */; };
+		0B36A02316BF901F0017B936 /* UserDemographicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FBA16BF901F0017B936 /* UserDemographicsViewController.m */; };
+		0B36A02416BF901F0017B936 /* UserDemographicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FBB16BF901F0017B936 /* UserDemographicsViewController.xib */; };
+		0B36A02516BF901F0017B936 /* UserDemographicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FBD16BF901F0017B936 /* UserDemographicTableViewController.m */; };
+		0B36A02616BF901F0017B936 /* UserDemographicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FBE16BF901F0017B936 /* UserDemographicTableViewController.xib */; };
+		0B36A02716BF901F0017B936 /* UserID.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B369FC016BF901F0017B936 /* UserID.m */; };
+		0B36A02816BF901F0017B936 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC116BF901F0017B936 /* whiteButton.png */; };
+		0B36A02916BF901F0017B936 /* MakeVotingCount.psd in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC216BF901F0017B936 /* MakeVotingCount.psd */; };
+		0B36A02A16BF901F0017B936 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC316BF901F0017B936 /* README.txt */; };
+		0B36A02B16BF901F0017B936 /* Terms And Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC416BF901F0017B936 /* Terms And Conditions.pdf */; };
+		0B36A02C16BF901F0017B936 /* Terms And Conditions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0B369FC516BF901F0017B936 /* Terms And Conditions.rtf */; };
+		0B4B89381579CED5006C4937 /* IRV_ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B89361579CED5006C4937 /* IRV_ResultsViewController.m */; };
+		0B4B89391579CED5006C4937 /* IRV_ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4B89371579CED5006C4937 /* IRV_ResultsViewController.xib */; };
+		0B654B1B1524C235005F8DE1 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B0F1524C235005F8DE1 /* blueButton.png */; };
+		0B654B1C1524C235005F8DE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B111524C235005F8DE1 /* InfoPlist.strings */; };
+		0B654B1D1524C235005F8DE1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B131524C235005F8DE1 /* MainWindow.xib */; };
+		0B654B1E1524C235005F8DE1 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B151524C235005F8DE1 /* RootViewController.xib */; };
+		0B654B1F1524C235005F8DE1 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B181524C235005F8DE1 /* MainWindow-iPad.xib */; };
+		0B654B201524C235005F8DE1 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B654B1A1524C235005F8DE1 /* whiteButton.png */; };
+		0B704FE6151D7784003FD37E /* ApprovalInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B704FE4151D7784003FD37E /* ApprovalInstructionsViewController.m */; };
+		0B704FE7151D7784003FD37E /* ApprovalInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B704FE5151D7784003FD37E /* ApprovalInstructionsViewController.xib */; };
+		0B7D5BDC15CE234000C76A57 /* MakeVotingCount.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7D5BDB15CE234000C76A57 /* MakeVotingCount.png */; };
+		0B7D5BE115CE2EFD00C76A57 /* UserDemographicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7D5BDF15CE2EFD00C76A57 /* UserDemographicsViewController.m */; };
+		0B7D5BE215CE2EFD00C76A57 /* UserDemographicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7D5BE015CE2EFD00C76A57 /* UserDemographicsViewController.xib */; };
+		0BABD28C1518405C00D8AA43 /* RangeInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABD28A1518405C00D8AA43 /* RangeInstructionsViewController.m */; };
+		0BABD28D1518405C00D8AA43 /* RangeInstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BABD28B1518405C00D8AA43 /* RangeInstructionsViewController.xib */; };
+		0BB298E3151E903E00BA4C4D /* IRVinstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB298E1151E903E00BA4C4D /* IRVinstructionsViewController.m */; };
+		0BB298E4151E903E00BA4C4D /* IRVinstructionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB298E2151E903E00BA4C4D /* IRVinstructionsViewController.xib */; };
+		0BB298E9151F571000BA4C4D /* IRVmessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB298E7151F571000BA4C4D /* IRVmessagesViewController.m */; };
+		0BB298EA151F571000BA4C4D /* IRVmessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB298E8151F571000BA4C4D /* IRVmessagesViewController.xib */; };
+		0BB298EE151F572B00BA4C4D /* ApprovalMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB298EC151F572B00BA4C4D /* ApprovalMessagesViewController.m */; };
+		0BB298EF151F572B00BA4C4D /* ApprovalMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB298ED151F572B00BA4C4D /* ApprovalMessagesViewController.xib */; };
+		0BB298F3151F573F00BA4C4D /* RangeMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB298F1151F573E00BA4C4D /* RangeMessagesViewController.m */; };
+		0BB298F4151F573F00BA4C4D /* RangeMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB298F2151F573F00BA4C4D /* RangeMessagesViewController.xib */; };
+		0BB298F8151F575A00BA4C4D /* PluralityMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB298F6151F575A00BA4C4D /* PluralityMessagesViewController.m */; };
+		0BB298F9151F575A00BA4C4D /* PluralityMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB298F7151F575A00BA4C4D /* PluralityMessagesViewController.xib */; };
+		0BB4EF12152699CF002279B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB4EF11152699CF002279B4 /* MessageUI.framework */; };
+		0BB4EF171526A0C5002279B4 /* EmailComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4EF151526A0C5002279B4 /* EmailComposerViewController.m */; };
+		0BB4EF181526A0C5002279B4 /* EmailComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB4EF161526A0C5002279B4 /* EmailComposerViewController.xib */; };
+		0BCFF674152414F20013C9F0 /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF66E152414F20013C9F0 /* greenButton.png */; };
+		0BCFF675152414F20013C9F0 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF670152414F20013C9F0 /* MainWindow-iPad.xib */; };
+		0BCFF676152414F20013C9F0 /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF672152414F20013C9F0 /* redButton.png */; };
+		0BCFF67915241B250013C9F0 /* purpleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCFF67815241B250013C9F0 /* purpleButton.png */; };
+		0BD054621675027E00F91EE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD054611675027E00F91EE9 /* Default-568h@2x.png */; };
+		0BD301C4149F01D200C68B1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301BE149F01D200C68B1D /* InfoPlist.strings */; };
+		0BD301C5149F01D200C68B1D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301C0149F01D200C68B1D /* MainWindow.xib */; };
+		0BD301C6149F01D200C68B1D /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD301C2149F01D200C68B1D /* RootViewController.xib */; };
+		0BE4B49C1584D19300B57257 /* RangeSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4B49B1584D19300B57257 /* RangeSpreadsheetGenerator.m */; };
+		0BE4B4A41584E60D00B57257 /* IRVSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4B4A31584E60D00B57257 /* IRVSpreadsheetGenerator.m */; };
+		0BEED89A1584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEED8991584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m */; };
+		0BF2369C166AE87900F53FE6 /* DataImporterThruEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */; };
+		0BF2369D166AE87900F53FE6 /* DataImporterThruEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */; };
+		0BF2961014566ED90083F2A2 /* RangeDataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2960E14566ED80083F2A2 /* RangeDataViewerViewController.m */; };
+		0BF2961114566ED90083F2A2 /* RangeDataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2960F14566ED90083F2A2 /* RangeDataViewerViewController.xib */; };
+		0BF2961614566EFE0083F2A2 /* RangeStatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2961414566EFE0083F2A2 /* RangeStatsViewerViewController.m */; };
+		0BF2961714566EFE0083F2A2 /* RangeStatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2961514566EFE0083F2A2 /* RangeStatsViewerViewController.xib */; };
+		0BF2961C1457CECA0083F2A2 /* IRVviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2961A1457CECA0083F2A2 /* IRVviewController.m */; };
+		0BF2961D1457CECA0083F2A2 /* IRVviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2961B1457CECA0083F2A2 /* IRVviewController.xib */; };
+		0BF29620145851F40083F2A2 /* CandidateWriteInIRVcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2961F145851F40083F2A2 /* CandidateWriteInIRVcell.m */; };
+		0BF296221458521E0083F2A2 /* CandidateWriteInIRVcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF296211458521E0083F2A2 /* CandidateWriteInIRVcell.xib */; };
+		0BF29624145857680083F2A2 /* CandidateIRVcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF29623145857680083F2A2 /* CandidateIRVcell.xib */; };
+		0BF2962714586E0F0083F2A2 /* CandidateIRVcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2962614586E0E0083F2A2 /* CandidateIRVcell.m */; };
+		0BF2962B1459B57F0083F2A2 /* IRVdataViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF296291459B57E0083F2A2 /* IRVdataViewerViewController.m */; };
+		0BF2962C1459B57F0083F2A2 /* IRVdataViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2962A1459B57F0083F2A2 /* IRVdataViewerViewController.xib */; };
+		0BF296301459B5970083F2A2 /* IRVstatsViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2962E1459B5960083F2A2 /* IRVstatsViewerViewController.m */; };
+		0BF296311459B5970083F2A2 /* IRVstatsViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2962F1459B5970083F2A2 /* IRVstatsViewerViewController.xib */; };
+		0BF2963B145AC1580083F2A2 /* ApprovalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF29639145AC1580083F2A2 /* ApprovalViewController.m */; };
+		0BF2963C145AC1580083F2A2 /* ApprovalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2963A145AC1580083F2A2 /* ApprovalViewController.xib */; };
+		0BF29644145AC5DD0083F2A2 /* CandidateApprovalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF29643145AC5DD0083F2A2 /* CandidateApprovalCell.m */; };
+		0BF29647145AC6140083F2A2 /* CandidateWriteInApprovalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF29646145AC6140083F2A2 /* CandidateWriteInApprovalCell.m */; };
+		0BF29649145AC6350083F2A2 /* CandidateWriteInApprovalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF29648145AC6340083F2A2 /* CandidateWriteInApprovalCell.xib */; };
+		0BF2964B145AC65B0083F2A2 /* CandidateApprovalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF2964A145AC65A0083F2A2 /* CandidateApprovalCell.xib */; };
+		0BF3F920157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3F91F157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.m */; };
+		0BF4B1C6144F4A5D00543234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4B1C5144F4A5D00543234 /* UIKit.framework */; };
+		0BF4B1C8144F4A5D00543234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4B1C7144F4A5D00543234 /* Foundation.framework */; };
+		0BF4B1CA144F4A5D00543234 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4B1C9144F4A5D00543234 /* CoreGraphics.framework */; };
+		0BF4B1D0144F4A5D00543234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BF4B1CE144F4A5D00543234 /* InfoPlist.strings */; };
+		0BF4B1D3144F4A5D00543234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1D2144F4A5D00543234 /* main.m */; };
+		0BF4B1D6144F4A5D00543234 /* ElectoralExperimentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1D5144F4A5D00543234 /* ElectoralExperimentAppDelegate.m */; };
+		0BF4B1DC144F4A5D00543234 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1DB144F4A5D00543234 /* RootViewController.m */; };
+		0BF4B1E8144F4A7B00543234 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF4B1E6144F4A7B00543234 /* MainWindow-iPad.xib */; };
+		0BF4B1ED144F623B00543234 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1EB144F623B00543234 /* AdminViewController.m */; };
+		0BF4B1EE144F623B00543234 /* AdminViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF4B1EC144F623B00543234 /* AdminViewController.xib */; };
+		0BF4B1F214507DB800543234 /* FileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1F114507DB700543234 /* FileHandle.m */; };
+		0BF4B1F714509FA400543234 /* CreateCandidateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4B1F514509FA400543234 /* CreateCandidateListViewController.m */; };
+		0BF4B1F814509FA400543234 /* CreateCandidateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF4B1F614509FA400543234 /* CreateCandidateListViewController.xib */; };
+		0BF561C515E9318200C11732 /* DemographicsDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BF561C315E9318100C11732 /* DemographicsDBModel.xcdatamodeld */; };
+		0BF5620715EA6AAE00C11732 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF5620615EA6AAE00C11732 /* CoreData.framework */; };
+		0BF5620F15EAECF500C11732 /* AgeGroupQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5620E15EAECF500C11732 /* AgeGroupQuestionaire.m */; };
+		0BF5621215EAECF600C11732 /* RaceQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5621115EAECF600C11732 /* RaceQuestionaire.m */; };
+		0BF5621515EAECF700C11732 /* PoliticalAffiliationQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5621415EAECF600C11732 /* PoliticalAffiliationQuestionaire.m */; };
+		0BF5621815EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5621715EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.m */; };
+		0BF5621B15EAECF800C11732 /* GenderQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5621A15EAECF800C11732 /* GenderQuestionaire.m */; };
+		0BF5621E15EAECF800C11732 /* MostImportantIssueQuestionaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5621D15EAECF800C11732 /* MostImportantIssueQuestionaire.m */; };
+		0BF5622115EAECF800C11732 /* UserID.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5622015EAECF800C11732 /* UserID.m */; };
+		0BF5622715EAF95600C11732 /* UserDemographicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5622515EAF95600C11732 /* UserDemographicTableViewController.m */; };
+		0BF5622815EAF95600C11732 /* UserDemographicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5622615EAF95600C11732 /* UserDemographicTableViewController.xib */; };
+		0BF5622A15EAFECA00C11732 /* UserDemographicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF5622915EAFECA00C11732 /* UserDemographicCell.xib */; };
+		0BF5622D15EAFF0F00C11732 /* UserDemographicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5622C15EAFF0F00C11732 /* UserDemographicCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B19588E145F917200F46E5D /* ApprovalDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalDataViewerViewController.h; sourceTree = "<group>"; };
+		0B19588F145F917200F46E5D /* ApprovalDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalDataViewerViewController.m; sourceTree = "<group>"; };
+		0B195890145F917200F46E5D /* ApprovalDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalDataViewerViewController.xib; sourceTree = "<group>"; };
+		0B195894145F919F00F46E5D /* ApprovalStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalStatsViewerViewController.h; sourceTree = "<group>"; };
+		0B195895145F919F00F46E5D /* ApprovalStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalStatsViewerViewController.m; sourceTree = "<group>"; };
+		0B195896145F919F00F46E5D /* ApprovalStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B19589C145FA51600F46E5D /* MySingelton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingelton.h; sourceTree = "<group>"; };
+		0B19589D145FA51600F46E5D /* MySingelton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingelton.m; sourceTree = "<group>"; };
+		0B2EB40E150E594F004E7AC5 /* SizeConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeConstants.h; sourceTree = "<group>"; };
+		0B2EB40F150FCEF8004E7AC5 /* CandidateWriteInPluralitycell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInPluralitycell.xib; sourceTree = "<group>"; };
+		0B2EB411150FCF94004E7AC5 /* CandidateWriteInPluralitycell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInPluralitycell.h; sourceTree = "<group>"; };
+		0B2EB412150FCFBD004E7AC5 /* CandidateWriteInPluralitycell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CandidateWriteInPluralitycell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B2EB415150FD6B6004E7AC5 /* CandidatePluralitycell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidatePluralitycell.h; sourceTree = "<group>"; };
+		0B2EB416150FD6D7004E7AC5 /* CandidatePluralitycell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidatePluralitycell.m; sourceTree = "<group>"; };
+		0B2EB418150FD6F1004E7AC5 /* CandidatePluralitycell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidatePluralitycell.xib; sourceTree = "<group>"; };
+		0B2EB41F1511A7EE004E7AC5 /* PluralityInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityInstructionsViewController.h; sourceTree = "<group>"; };
+		0B2EB4201511A7EE004E7AC5 /* PluralityInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluralityInstructionsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B2EB4211511A7EF004E7AC5 /* PluralityInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityInstructionsViewController.xib; sourceTree = "<group>"; };
+		0B36154714527DEA006E6EDD /* PluralityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityViewController.h; sourceTree = "<group>"; };
+		0B36154814527DEA006E6EDD /* PluralityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluralityViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B36154914527DEA006E6EDD /* PluralityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityViewController.xib; sourceTree = "<group>"; };
+		0B36154D14544FEF006E6EDD /* PluralityDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityDataViewerViewController.h; sourceTree = "<group>"; };
+		0B36154E14544FEF006E6EDD /* PluralityDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluralityDataViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B36154F14544FEF006E6EDD /* PluralityDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityDataViewerViewController.xib; sourceTree = "<group>"; };
+		0B361552145454AB006E6EDD /* PluralityStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityStatsViewerViewController.h; sourceTree = "<group>"; };
+		0B361553145454AB006E6EDD /* PluralityStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluralityStatsViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B361554145454AB006E6EDD /* PluralityStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B36155814551E33006E6EDD /* RangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeViewController.h; sourceTree = "<group>"; };
+		0B36155914551E33006E6EDD /* RangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeViewController.m; sourceTree = "<group>"; };
+		0B36155A14551E33006E6EDD /* RangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewController.xib; sourceTree = "<group>"; };
+		0B36156314560701006E6EDD /* RangeViewCandidateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewCandidateCell.xib; sourceTree = "<group>"; };
+		0B36156514560716006E6EDD /* RangeViewCandidateWriteInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewCandidateWriteInCell.xib; sourceTree = "<group>"; };
+		0B3615671456193E006E6EDD /* CandidateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateCell.h; sourceTree = "<group>"; };
+		0B3615681456193E006E6EDD /* CandidateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateCell.m; sourceTree = "<group>"; };
+		0B36156A14561955006E6EDD /* CandidateWriteInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInCell.h; sourceTree = "<group>"; };
+		0B36156B14561956006E6EDD /* CandidateWriteInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CandidateWriteInCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B369F2216BF901E0017B936 /* AdminMenuOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminMenuOptions.h; sourceTree = "<group>"; };
+		0B369F2316BF901E0017B936 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
+		0B369F2416BF901E0017B936 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
+		0B369F2516BF901E0017B936 /* AdminViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminViewController.xib; sourceTree = "<group>"; };
+		0B369F2616BF901E0017B936 /* AgeGroupQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeGroupQuestionaire.h; sourceTree = "<group>"; };
+		0B369F2716BF901E0017B936 /* AgeGroupQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeGroupQuestionaire.m; sourceTree = "<group>"; };
+		0B369F2816BF901E0017B936 /* AnnualHousholdIncomeQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnualHousholdIncomeQuestionaire.h; sourceTree = "<group>"; };
+		0B369F2916BF901E0017B936 /* AnnualHousholdIncomeQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnualHousholdIncomeQuestionaire.m; sourceTree = "<group>"; };
+		0B369F2A16BF901E0017B936 /* ApprovalDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalDataViewerViewController.h; sourceTree = "<group>"; };
+		0B369F2B16BF901E0017B936 /* ApprovalDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalDataViewerViewController.m; sourceTree = "<group>"; };
+		0B369F2C16BF901E0017B936 /* ApprovalDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalDataViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F2D16BF901E0017B936 /* ApprovalInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalInstructionsViewController.h; sourceTree = "<group>"; };
+		0B369F2E16BF901E0017B936 /* ApprovalInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalInstructionsViewController.m; sourceTree = "<group>"; };
+		0B369F2F16BF901E0017B936 /* ApprovalInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalInstructionsViewController.xib; sourceTree = "<group>"; };
+		0B369F3016BF901E0017B936 /* ApprovalMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalMessagesViewController.h; sourceTree = "<group>"; };
+		0B369F3116BF901E0017B936 /* ApprovalMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalMessagesViewController.m; sourceTree = "<group>"; };
+		0B369F3216BF901E0017B936 /* ApprovalMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalMessagesViewController.xib; sourceTree = "<group>"; };
+		0B369F3316BF901E0017B936 /* ApprovalSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0B369F3416BF901E0017B936 /* ApprovalSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0B369F3516BF901E0017B936 /* ApprovalStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalStatsViewerViewController.h; sourceTree = "<group>"; };
+		0B369F3616BF901E0017B936 /* ApprovalStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalStatsViewerViewController.m; sourceTree = "<group>"; };
+		0B369F3716BF901E0017B936 /* ApprovalStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F3816BF901E0017B936 /* ApprovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalViewController.h; sourceTree = "<group>"; };
+		0B369F3916BF901E0017B936 /* ApprovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalViewController.m; sourceTree = "<group>"; };
+		0B369F3A16BF901E0017B936 /* ApprovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalViewController.xib; sourceTree = "<group>"; };
+		0B369F3B16BF901E0017B936 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		0B369F3C16BF901E0017B936 /* CandidateApprovalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateApprovalCell.h; sourceTree = "<group>"; };
+		0B369F3D16BF901E0017B936 /* CandidateApprovalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateApprovalCell.m; sourceTree = "<group>"; };
+		0B369F3E16BF901E0017B936 /* CandidateApprovalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateApprovalCell.xib; sourceTree = "<group>"; };
+		0B369F3F16BF901E0017B936 /* CandidateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateCell.h; sourceTree = "<group>"; };
+		0B369F4016BF901E0017B936 /* CandidateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateCell.m; sourceTree = "<group>"; };
+		0B369F4116BF901E0017B936 /* CandidateIRVcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateIRVcell.h; sourceTree = "<group>"; };
+		0B369F4216BF901E0017B936 /* CandidateIRVcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateIRVcell.m; sourceTree = "<group>"; };
+		0B369F4316BF901E0017B936 /* CandidateIRVcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateIRVcell.xib; sourceTree = "<group>"; };
+		0B369F4416BF901E0017B936 /* CandidatePluralitycell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidatePluralitycell.h; sourceTree = "<group>"; };
+		0B369F4516BF901E0017B936 /* CandidatePluralitycell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidatePluralitycell.m; sourceTree = "<group>"; };
+		0B369F4616BF901E0017B936 /* CandidatePluralitycell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidatePluralitycell.xib; sourceTree = "<group>"; };
+		0B369F4716BF901E0017B936 /* CandidateWriteInApprovalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInApprovalCell.h; sourceTree = "<group>"; };
+		0B369F4816BF901E0017B936 /* CandidateWriteInApprovalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateWriteInApprovalCell.m; sourceTree = "<group>"; };
+		0B369F4916BF901E0017B936 /* CandidateWriteInApprovalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInApprovalCell.xib; sourceTree = "<group>"; };
+		0B369F4A16BF901E0017B936 /* CandidateWriteInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInCell.h; sourceTree = "<group>"; };
+		0B369F4B16BF901E0017B936 /* CandidateWriteInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateWriteInCell.m; sourceTree = "<group>"; };
+		0B369F4C16BF901E0017B936 /* CandidateWriteInIRVcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInIRVcell.h; sourceTree = "<group>"; };
+		0B369F4D16BF901E0017B936 /* CandidateWriteInIRVcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateWriteInIRVcell.m; sourceTree = "<group>"; };
+		0B369F4E16BF901E0017B936 /* CandidateWriteInIRVcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInIRVcell.xib; sourceTree = "<group>"; };
+		0B369F4F16BF901E0017B936 /* CandidateWriteInPluralitycell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInPluralitycell.h; sourceTree = "<group>"; };
+		0B369F5016BF901E0017B936 /* CandidateWriteInPluralitycell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateWriteInPluralitycell.m; sourceTree = "<group>"; };
+		0B369F5116BF901E0017B936 /* CandidateWriteInPluralitycell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInPluralitycell.xib; sourceTree = "<group>"; };
+		0B369F5216BF901E0017B936 /* CreateCandidateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCandidateListViewController.h; sourceTree = "<group>"; };
+		0B369F5316BF901E0017B936 /* CreateCandidateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCandidateListViewController.m; sourceTree = "<group>"; };
+		0B369F5416BF901E0017B936 /* CreateCandidateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateCandidateListViewController.xib; sourceTree = "<group>"; };
+		0B369F5516BF901E0017B936 /* DataImporterThruEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataImporterThruEmailViewController.h; sourceTree = "<group>"; };
+		0B369F5616BF901E0017B936 /* DataImporterThruEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataImporterThruEmailViewController.m; sourceTree = "<group>"; };
+		0B369F5716BF901E0017B936 /* DataImporterThruEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataImporterThruEmailViewController.xib; sourceTree = "<group>"; };
+		0B369F5916BF901E0017B936 /* DemographicsDBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemographicsDBModel.xcdatamodel; sourceTree = "<group>"; };
+		0B369F5A16BF901E0017B936 /* ElectoralExperiment-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ElectoralExperiment-Info.plist"; sourceTree = "<group>"; };
+		0B369F5B16BF901E0017B936 /* ElectoralExperiment-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ElectoralExperiment-Prefix.pch"; sourceTree = "<group>"; };
+		0B369F5C16BF901E0017B936 /* ElectoralExperimentAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralExperimentAppDelegate.h; sourceTree = "<group>"; };
+		0B369F5D16BF901E0017B936 /* ElectoralExperimentAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectoralExperimentAppDelegate.m; sourceTree = "<group>"; };
+		0B369F5E16BF901E0017B936 /* ElectoralExperiments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralExperiments.h; sourceTree = "<group>"; };
+		0B369F5F16BF901E0017B936 /* EmailComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailComposerViewController.h; sourceTree = "<group>"; };
+		0B369F6016BF901E0017B936 /* EmailComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailComposerViewController.m; sourceTree = "<group>"; };
+		0B369F6116BF901E0017B936 /* EmailComposerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailComposerViewController.xib; sourceTree = "<group>"; };
+		0B369F6316BF901E0017B936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B369F6516BF901E0017B936 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0B369F6716BF901E0017B936 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		0B369F6816BF901E0017B936 /* FileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandle.h; sourceTree = "<group>"; };
+		0B369F6916BF901E0017B936 /* FileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandle.m; sourceTree = "<group>"; };
+		0B369F6A16BF901E0017B936 /* GenderQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderQuestionaire.h; sourceTree = "<group>"; };
+		0B369F6B16BF901E0017B936 /* GenderQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderQuestionaire.m; sourceTree = "<group>"; };
+		0B369F6C16BF901E0017B936 /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		0B369F6F16BF901E0017B936 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		0B369F7016BF901E0017B936 /* IRV_ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRV_ResultsViewController.h; sourceTree = "<group>"; };
+		0B369F7116BF901E0017B936 /* IRV_ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRV_ResultsViewController.m; sourceTree = "<group>"; };
+		0B369F7216BF901E0017B936 /* IRV_ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRV_ResultsViewController.xib; sourceTree = "<group>"; };
+		0B369F7316BF901E0017B936 /* IRVdataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVdataViewerViewController.h; sourceTree = "<group>"; };
+		0B369F7416BF901E0017B936 /* IRVdataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVdataViewerViewController.m; sourceTree = "<group>"; };
+		0B369F7516BF901E0017B936 /* IRVdataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVdataViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F7616BF901E0017B936 /* IRVinstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVinstructionsViewController.h; sourceTree = "<group>"; };
+		0B369F7716BF901E0017B936 /* IRVinstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVinstructionsViewController.m; sourceTree = "<group>"; };
+		0B369F7816BF901E0017B936 /* IRVinstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVinstructionsViewController.xib; sourceTree = "<group>"; };
+		0B369F7916BF901E0017B936 /* IRVmessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVmessagesViewController.h; sourceTree = "<group>"; };
+		0B369F7A16BF901E0017B936 /* IRVmessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVmessagesViewController.m; sourceTree = "<group>"; };
+		0B369F7B16BF901E0017B936 /* IRVmessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVmessagesViewController.xib; sourceTree = "<group>"; };
+		0B369F7C16BF901E0017B936 /* IRVSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0B369F7D16BF901E0017B936 /* IRVSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0B369F7E16BF901F0017B936 /* IRVstatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVstatsViewerViewController.h; sourceTree = "<group>"; };
+		0B369F7F16BF901F0017B936 /* IRVstatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVstatsViewerViewController.m; sourceTree = "<group>"; };
+		0B369F8016BF901F0017B936 /* IRVstatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVstatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F8116BF901F0017B936 /* IRVviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVviewController.h; sourceTree = "<group>"; };
+		0B369F8216BF901F0017B936 /* IRVviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVviewController.m; sourceTree = "<group>"; };
+		0B369F8316BF901F0017B936 /* IRVviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVviewController.xib; sourceTree = "<group>"; };
+		0B369F8416BF901F0017B936 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B369F8516BF901F0017B936 /* MostImportantIssueQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostImportantIssueQuestionaire.h; sourceTree = "<group>"; };
+		0B369F8616BF901F0017B936 /* MostImportantIssueQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostImportantIssueQuestionaire.m; sourceTree = "<group>"; };
+		0B369F8716BF901F0017B936 /* MySingelton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingelton.h; sourceTree = "<group>"; };
+		0B369F8816BF901F0017B936 /* MySingelton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingelton.m; sourceTree = "<group>"; };
+		0B369F8916BF901F0017B936 /* PluralityDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityDataViewerViewController.h; sourceTree = "<group>"; };
+		0B369F8A16BF901F0017B936 /* PluralityDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralityDataViewerViewController.m; sourceTree = "<group>"; };
+		0B369F8B16BF901F0017B936 /* PluralityDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityDataViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F8C16BF901F0017B936 /* PluralityInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityInstructionsViewController.h; sourceTree = "<group>"; };
+		0B369F8D16BF901F0017B936 /* PluralityInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralityInstructionsViewController.m; sourceTree = "<group>"; };
+		0B369F8E16BF901F0017B936 /* PluralityInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityInstructionsViewController.xib; sourceTree = "<group>"; };
+		0B369F8F16BF901F0017B936 /* PluralityMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityMessagesViewController.h; sourceTree = "<group>"; };
+		0B369F9016BF901F0017B936 /* PluralityMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralityMessagesViewController.m; sourceTree = "<group>"; };
+		0B369F9116BF901F0017B936 /* PluralityMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityMessagesViewController.xib; sourceTree = "<group>"; };
+		0B369F9216BF901F0017B936 /* PluralitySpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralitySpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0B369F9316BF901F0017B936 /* PluralitySpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralitySpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0B369F9416BF901F0017B936 /* PluralityStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityStatsViewerViewController.h; sourceTree = "<group>"; };
+		0B369F9516BF901F0017B936 /* PluralityStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralityStatsViewerViewController.m; sourceTree = "<group>"; };
+		0B369F9616BF901F0017B936 /* PluralityStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B369F9716BF901F0017B936 /* PluralityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityViewController.h; sourceTree = "<group>"; };
+		0B369F9816BF901F0017B936 /* PluralityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralityViewController.m; sourceTree = "<group>"; };
+		0B369F9916BF901F0017B936 /* PluralityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityViewController.xib; sourceTree = "<group>"; };
+		0B369F9A16BF901F0017B936 /* PoliticalAffiliationQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticalAffiliationQuestionaire.h; sourceTree = "<group>"; };
+		0B369F9B16BF901F0017B936 /* PoliticalAffiliationQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticalAffiliationQuestionaire.m; sourceTree = "<group>"; };
+		0B369F9C16BF901F0017B936 /* purpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleButton.png; sourceTree = "<group>"; };
+		0B369F9D16BF901F0017B936 /* RaceQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaceQuestionaire.h; sourceTree = "<group>"; };
+		0B369F9E16BF901F0017B936 /* RaceQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaceQuestionaire.m; sourceTree = "<group>"; };
+		0B369F9F16BF901F0017B936 /* RangeDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeDataViewerViewController.h; sourceTree = "<group>"; };
+		0B369FA016BF901F0017B936 /* RangeDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeDataViewerViewController.m; sourceTree = "<group>"; };
+		0B369FA116BF901F0017B936 /* RangeDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeDataViewerViewController.xib; sourceTree = "<group>"; };
+		0B369FA216BF901F0017B936 /* RangeInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeInstructionsViewController.h; sourceTree = "<group>"; };
+		0B369FA316BF901F0017B936 /* RangeInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeInstructionsViewController.m; sourceTree = "<group>"; };
+		0B369FA416BF901F0017B936 /* RangeInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeInstructionsViewController.xib; sourceTree = "<group>"; };
+		0B369FA516BF901F0017B936 /* RangeMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeMessagesViewController.h; sourceTree = "<group>"; };
+		0B369FA616BF901F0017B936 /* RangeMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeMessagesViewController.m; sourceTree = "<group>"; };
+		0B369FA716BF901F0017B936 /* RangeMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeMessagesViewController.xib; sourceTree = "<group>"; };
+		0B369FA816BF901F0017B936 /* RangeSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0B369FA916BF901F0017B936 /* RangeSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0B369FAA16BF901F0017B936 /* RangeStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeStatsViewerViewController.h; sourceTree = "<group>"; };
+		0B369FAB16BF901F0017B936 /* RangeStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeStatsViewerViewController.m; sourceTree = "<group>"; };
+		0B369FAC16BF901F0017B936 /* RangeStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0B369FAD16BF901F0017B936 /* RangeViewCandidateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewCandidateCell.xib; sourceTree = "<group>"; };
+		0B369FAE16BF901F0017B936 /* RangeViewCandidateWriteInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewCandidateWriteInCell.xib; sourceTree = "<group>"; };
+		0B369FAF16BF901F0017B936 /* RangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeViewController.h; sourceTree = "<group>"; };
+		0B369FB016BF901F0017B936 /* RangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeViewController.m; sourceTree = "<group>"; };
+		0B369FB116BF901F0017B936 /* RangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeViewController.xib; sourceTree = "<group>"; };
+		0B369FB216BF901F0017B936 /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
+		0B369FB316BF901F0017B936 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0B369FB416BF901F0017B936 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0B369FB516BF901F0017B936 /* SizeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeConstants.h; sourceTree = "<group>"; };
+		0B369FB616BF901F0017B936 /* UserDemographicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicCell.h; sourceTree = "<group>"; };
+		0B369FB716BF901F0017B936 /* UserDemographicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDemographicCell.m; sourceTree = "<group>"; };
+		0B369FB816BF901F0017B936 /* UserDemographicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicCell.xib; sourceTree = "<group>"; };
+		0B369FB916BF901F0017B936 /* UserDemographicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicsViewController.h; sourceTree = "<group>"; };
+		0B369FBA16BF901F0017B936 /* UserDemographicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDemographicsViewController.m; sourceTree = "<group>"; };
+		0B369FBB16BF901F0017B936 /* UserDemographicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicsViewController.xib; sourceTree = "<group>"; };
+		0B369FBC16BF901F0017B936 /* UserDemographicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicTableViewController.h; sourceTree = "<group>"; };
+		0B369FBD16BF901F0017B936 /* UserDemographicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDemographicTableViewController.m; sourceTree = "<group>"; };
+		0B369FBE16BF901F0017B936 /* UserDemographicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicTableViewController.xib; sourceTree = "<group>"; };
+		0B369FBF16BF901F0017B936 /* UserID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserID.h; sourceTree = "<group>"; };
+		0B369FC016BF901F0017B936 /* UserID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserID.m; sourceTree = "<group>"; };
+		0B369FC116BF901F0017B936 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		0B369FC216BF901F0017B936 /* MakeVotingCount.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = MakeVotingCount.psd; sourceTree = "<group>"; };
+		0B369FC316BF901F0017B936 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		0B369FC416BF901F0017B936 /* Terms And Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Terms And Conditions.pdf"; sourceTree = "<group>"; };
+		0B369FC516BF901F0017B936 /* Terms And Conditions.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Terms And Conditions.rtf"; sourceTree = "<group>"; };
+		0B4B89351579CED5006C4937 /* IRV_ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRV_ResultsViewController.h; sourceTree = "<group>"; };
+		0B4B89361579CED5006C4937 /* IRV_ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRV_ResultsViewController.m; sourceTree = "<group>"; };
+		0B4B89371579CED5006C4937 /* IRV_ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRV_ResultsViewController.xib; sourceTree = "<group>"; };
+		0B654B0F1524C235005F8DE1 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		0B654B121524C235005F8DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0B654B141524C235005F8DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		0B654B161524C235005F8DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
+		0B654B191524C235005F8DE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		0B654B1A1524C235005F8DE1 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		0B704FE3151D7784003FD37E /* ApprovalInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalInstructionsViewController.h; sourceTree = "<group>"; };
+		0B704FE4151D7784003FD37E /* ApprovalInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalInstructionsViewController.m; sourceTree = "<group>"; };
+		0B704FE5151D7784003FD37E /* ApprovalInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalInstructionsViewController.xib; sourceTree = "<group>"; };
+		0B7D5BDB15CE234000C76A57 /* MakeVotingCount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MakeVotingCount.png; sourceTree = "<group>"; };
+		0B7D5BDE15CE2EFD00C76A57 /* UserDemographicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicsViewController.h; sourceTree = "<group>"; };
+		0B7D5BDF15CE2EFD00C76A57 /* UserDemographicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UserDemographicsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0B7D5BE015CE2EFD00C76A57 /* UserDemographicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicsViewController.xib; sourceTree = "<group>"; };
+		0BABD2891518405B00D8AA43 /* RangeInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeInstructionsViewController.h; sourceTree = "<group>"; };
+		0BABD28A1518405C00D8AA43 /* RangeInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeInstructionsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BABD28B1518405C00D8AA43 /* RangeInstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeInstructionsViewController.xib; sourceTree = "<group>"; };
+		0BB298E0151E903D00BA4C4D /* IRVinstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVinstructionsViewController.h; sourceTree = "<group>"; };
+		0BB298E1151E903E00BA4C4D /* IRVinstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IRVinstructionsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BB298E2151E903E00BA4C4D /* IRVinstructionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVinstructionsViewController.xib; sourceTree = "<group>"; };
+		0BB298E6151F571000BA4C4D /* IRVmessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVmessagesViewController.h; sourceTree = "<group>"; };
+		0BB298E7151F571000BA4C4D /* IRVmessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IRVmessagesViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BB298E8151F571000BA4C4D /* IRVmessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVmessagesViewController.xib; sourceTree = "<group>"; };
+		0BB298EB151F572B00BA4C4D /* ApprovalMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalMessagesViewController.h; sourceTree = "<group>"; };
+		0BB298EC151F572B00BA4C4D /* ApprovalMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalMessagesViewController.m; sourceTree = "<group>"; };
+		0BB298ED151F572B00BA4C4D /* ApprovalMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalMessagesViewController.xib; sourceTree = "<group>"; };
+		0BB298F0151F573E00BA4C4D /* RangeMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeMessagesViewController.h; sourceTree = "<group>"; };
+		0BB298F1151F573E00BA4C4D /* RangeMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeMessagesViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BB298F2151F573F00BA4C4D /* RangeMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeMessagesViewController.xib; sourceTree = "<group>"; };
+		0BB298F5151F575900BA4C4D /* PluralityMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralityMessagesViewController.h; sourceTree = "<group>"; };
+		0BB298F6151F575A00BA4C4D /* PluralityMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PluralityMessagesViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BB298F7151F575A00BA4C4D /* PluralityMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PluralityMessagesViewController.xib; sourceTree = "<group>"; };
+		0BB4EF11152699CF002279B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0BB4EF141526A0C5002279B4 /* EmailComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailComposerViewController.h; sourceTree = "<group>"; };
+		0BB4EF151526A0C5002279B4 /* EmailComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = EmailComposerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BB4EF161526A0C5002279B4 /* EmailComposerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailComposerViewController.xib; sourceTree = "<group>"; };
+		0BCFF66E152414F20013C9F0 /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		0BCFF671152414F20013C9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		0BCFF672152414F20013C9F0 /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
+		0BCFF67815241B250013C9F0 /* purpleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleButton.png; sourceTree = "<group>"; };
+		0BD054611675027E00F91EE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0BD301BF149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0BD301C1149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		0BD301C3149F01D200C68B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
+		0BE4B49A1584D19300B57257 /* RangeSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0BE4B49B1584D19300B57257 /* RangeSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0BE4B4A21584E60D00B57257 /* IRVSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0BE4B4A31584E60D00B57257 /* IRVSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0BEED8981584EE06007E24B3 /* ApprovalSpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalSpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0BEED8991584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalSpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0BF23699166AE87900F53FE6 /* DataImporterThruEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataImporterThruEmailViewController.h; sourceTree = "<group>"; };
+		0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataImporterThruEmailViewController.m; sourceTree = "<group>"; };
+		0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataImporterThruEmailViewController.xib; sourceTree = "<group>"; };
+		0BF2960D14566ED80083F2A2 /* RangeDataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeDataViewerViewController.h; sourceTree = "<group>"; };
+		0BF2960E14566ED80083F2A2 /* RangeDataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeDataViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF2960F14566ED90083F2A2 /* RangeDataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeDataViewerViewController.xib; sourceTree = "<group>"; };
+		0BF2961314566EFE0083F2A2 /* RangeStatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeStatsViewerViewController.h; sourceTree = "<group>"; };
+		0BF2961414566EFE0083F2A2 /* RangeStatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RangeStatsViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF2961514566EFE0083F2A2 /* RangeStatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangeStatsViewerViewController.xib; sourceTree = "<group>"; };
+		0BF296191457CECA0083F2A2 /* IRVviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVviewController.h; sourceTree = "<group>"; };
+		0BF2961A1457CECA0083F2A2 /* IRVviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVviewController.m; sourceTree = "<group>"; };
+		0BF2961B1457CECA0083F2A2 /* IRVviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVviewController.xib; sourceTree = "<group>"; };
+		0BF2961E145851F30083F2A2 /* CandidateWriteInIRVcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInIRVcell.h; sourceTree = "<group>"; };
+		0BF2961F145851F40083F2A2 /* CandidateWriteInIRVcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CandidateWriteInIRVcell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF296211458521E0083F2A2 /* CandidateWriteInIRVcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInIRVcell.xib; sourceTree = "<group>"; };
+		0BF29623145857680083F2A2 /* CandidateIRVcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateIRVcell.xib; sourceTree = "<group>"; };
+		0BF2962514586E0E0083F2A2 /* CandidateIRVcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateIRVcell.h; sourceTree = "<group>"; };
+		0BF2962614586E0E0083F2A2 /* CandidateIRVcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateIRVcell.m; sourceTree = "<group>"; };
+		0BF296281459B57D0083F2A2 /* IRVdataViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVdataViewerViewController.h; sourceTree = "<group>"; };
+		0BF296291459B57E0083F2A2 /* IRVdataViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IRVdataViewerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF2962A1459B57F0083F2A2 /* IRVdataViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVdataViewerViewController.xib; sourceTree = "<group>"; };
+		0BF2962D1459B5960083F2A2 /* IRVstatsViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRVstatsViewerViewController.h; sourceTree = "<group>"; };
+		0BF2962E1459B5960083F2A2 /* IRVstatsViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRVstatsViewerViewController.m; sourceTree = "<group>"; };
+		0BF2962F1459B5970083F2A2 /* IRVstatsViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRVstatsViewerViewController.xib; sourceTree = "<group>"; };
+		0BF29638145AC1570083F2A2 /* ApprovalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApprovalViewController.h; sourceTree = "<group>"; };
+		0BF29639145AC1580083F2A2 /* ApprovalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovalViewController.m; sourceTree = "<group>"; };
+		0BF2963A145AC1580083F2A2 /* ApprovalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApprovalViewController.xib; sourceTree = "<group>"; };
+		0BF29642145AC5DC0083F2A2 /* CandidateApprovalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateApprovalCell.h; sourceTree = "<group>"; };
+		0BF29643145AC5DD0083F2A2 /* CandidateApprovalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateApprovalCell.m; sourceTree = "<group>"; };
+		0BF29645145AC6140083F2A2 /* CandidateWriteInApprovalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateWriteInApprovalCell.h; sourceTree = "<group>"; };
+		0BF29646145AC6140083F2A2 /* CandidateWriteInApprovalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CandidateWriteInApprovalCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF29648145AC6340083F2A2 /* CandidateWriteInApprovalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateWriteInApprovalCell.xib; sourceTree = "<group>"; };
+		0BF2964A145AC65A0083F2A2 /* CandidateApprovalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateApprovalCell.xib; sourceTree = "<group>"; };
+		0BF3F91E157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluralitySpreadsheetGenerator.h; sourceTree = "<group>"; };
+		0BF3F91F157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluralitySpreadsheetGenerator.m; sourceTree = "<group>"; };
+		0BF4B1C1144F4A5D00543234 /* ElectoralExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectoralExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF4B1C5144F4A5D00543234 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BF4B1C7144F4A5D00543234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BF4B1C9144F4A5D00543234 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BF4B1CD144F4A5D00543234 /* ElectoralExperiment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ElectoralExperiment-Info.plist"; sourceTree = "<group>"; };
+		0BF4B1CF144F4A5D00543234 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BF4B1D1144F4A5D00543234 /* ElectoralExperiment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElectoralExperiment-Prefix.pch"; sourceTree = "<group>"; };
+		0BF4B1D2144F4A5D00543234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BF4B1D4144F4A5D00543234 /* ElectoralExperimentAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElectoralExperimentAppDelegate.h; sourceTree = "<group>"; };
+		0BF4B1D5144F4A5D00543234 /* ElectoralExperimentAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ElectoralExperimentAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF4B1DA144F4A5D00543234 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0BF4B1DB144F4A5D00543234 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RootViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF4B1E7144F4A7B00543234 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		0BF4B1E9144F4D8D00543234 /* ElectoralExperiments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectoralExperiments.h; sourceTree = "<group>"; };
+		0BF4B1EA144F623B00543234 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
+		0BF4B1EB144F623B00543234 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
+		0BF4B1EC144F623B00543234 /* AdminViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminViewController.xib; sourceTree = "<group>"; };
+		0BF4B1EF144F656700543234 /* AdminMenuOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminMenuOptions.h; sourceTree = "<group>"; };
+		0BF4B1F014507DB700543234 /* FileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHandle.h; sourceTree = "<group>"; };
+		0BF4B1F114507DB700543234 /* FileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHandle.m; sourceTree = "<group>"; };
+		0BF4B1F414509FA400543234 /* CreateCandidateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCandidateListViewController.h; sourceTree = "<group>"; };
+		0BF4B1F514509FA400543234 /* CreateCandidateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCandidateListViewController.m; sourceTree = "<group>"; };
+		0BF4B1F614509FA400543234 /* CreateCandidateListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateCandidateListViewController.xib; sourceTree = "<group>"; };
+		0BF561C415E9318200C11732 /* DemographicsDBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemographicsDBModel.xcdatamodel; sourceTree = "<group>"; };
+		0BF5620615EA6AAE00C11732 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0BF5620D15EAECF500C11732 /* AgeGroupQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeGroupQuestionaire.h; sourceTree = "<group>"; };
+		0BF5620E15EAECF500C11732 /* AgeGroupQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeGroupQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621015EAECF600C11732 /* RaceQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaceQuestionaire.h; sourceTree = "<group>"; };
+		0BF5621115EAECF600C11732 /* RaceQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaceQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621315EAECF600C11732 /* PoliticalAffiliationQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticalAffiliationQuestionaire.h; sourceTree = "<group>"; };
+		0BF5621415EAECF600C11732 /* PoliticalAffiliationQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticalAffiliationQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621615EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnualHousholdIncomeQuestionaire.h; sourceTree = "<group>"; };
+		0BF5621715EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnualHousholdIncomeQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621915EAECF800C11732 /* GenderQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderQuestionaire.h; sourceTree = "<group>"; };
+		0BF5621A15EAECF800C11732 /* GenderQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621C15EAECF800C11732 /* MostImportantIssueQuestionaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostImportantIssueQuestionaire.h; sourceTree = "<group>"; };
+		0BF5621D15EAECF800C11732 /* MostImportantIssueQuestionaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostImportantIssueQuestionaire.m; sourceTree = "<group>"; };
+		0BF5621F15EAECF800C11732 /* UserID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserID.h; sourceTree = "<group>"; };
+		0BF5622015EAECF800C11732 /* UserID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserID.m; sourceTree = "<group>"; };
+		0BF5622415EAF95600C11732 /* UserDemographicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicTableViewController.h; sourceTree = "<group>"; };
+		0BF5622515EAF95600C11732 /* UserDemographicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UserDemographicTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0BF5622615EAF95600C11732 /* UserDemographicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicTableViewController.xib; sourceTree = "<group>"; };
+		0BF5622915EAFECA00C11732 /* UserDemographicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDemographicCell.xib; sourceTree = "<group>"; };
+		0BF5622B15EAFF0F00C11732 /* UserDemographicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDemographicCell.h; sourceTree = "<group>"; };
+		0BF5622C15EAFF0F00C11732 /* UserDemographicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UserDemographicCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BF4B1BE144F4A5D00543234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF5620715EA6AAE00C11732 /* CoreData.framework in Frameworks */,
+				0BB4EF12152699CF002279B4 /* MessageUI.framework in Frameworks */,
+				0BF4B1C6144F4A5D00543234 /* UIKit.framework in Frameworks */,
+				0BF4B1C8144F4A5D00543234 /* Foundation.framework in Frameworks */,
+				0BF4B1CA144F4A5D00543234 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B36153B1452799F006E6EDD /* PluralityFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0B36154714527DEA006E6EDD /* PluralityViewController.h */,
+				0B36154814527DEA006E6EDD /* PluralityViewController.m */,
+				0B36154914527DEA006E6EDD /* PluralityViewController.xib */,
+				0B2EB415150FD6B6004E7AC5 /* CandidatePluralitycell.h */,
+				0B2EB416150FD6D7004E7AC5 /* CandidatePluralitycell.m */,
+				0B2EB418150FD6F1004E7AC5 /* CandidatePluralitycell.xib */,
+				0B2EB411150FCF94004E7AC5 /* CandidateWriteInPluralitycell.h */,
+				0B2EB412150FCFBD004E7AC5 /* CandidateWriteInPluralitycell.m */,
+				0B2EB40F150FCEF8004E7AC5 /* CandidateWriteInPluralitycell.xib */,
+				0B36154D14544FEF006E6EDD /* PluralityDataViewerViewController.h */,
+				0B36154E14544FEF006E6EDD /* PluralityDataViewerViewController.m */,
+				0B36154F14544FEF006E6EDD /* PluralityDataViewerViewController.xib */,
+				0B361552145454AB006E6EDD /* PluralityStatsViewerViewController.h */,
+				0B361553145454AB006E6EDD /* PluralityStatsViewerViewController.m */,
+				0B361554145454AB006E6EDD /* PluralityStatsViewerViewController.xib */,
+				0B2EB41F1511A7EE004E7AC5 /* PluralityInstructionsViewController.h */,
+				0B2EB4201511A7EE004E7AC5 /* PluralityInstructionsViewController.m */,
+				0B2EB4211511A7EF004E7AC5 /* PluralityInstructionsViewController.xib */,
+				0BF3F91E157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.h */,
+				0BF3F91F157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.m */,
+			);
+			name = PluralityFiles;
+			sourceTree = "<group>";
+		};
+		0B36154C145327CA006E6EDD /* kConstants */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1EF144F656700543234 /* AdminMenuOptions.h */,
+				0BF4B1E9144F4D8D00543234 /* ElectoralExperiments.h */,
+				0B2EB40E150E594F004E7AC5 /* SizeConstants.h */,
+			);
+			name = kConstants;
+			sourceTree = "<group>";
+		};
+		0B36155714551DD2006E6EDD /* RangeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0B36155814551E33006E6EDD /* RangeViewController.h */,
+				0B36155914551E33006E6EDD /* RangeViewController.m */,
+				0B36155A14551E33006E6EDD /* RangeViewController.xib */,
+				0B3615671456193E006E6EDD /* CandidateCell.h */,
+				0B3615681456193E006E6EDD /* CandidateCell.m */,
+				0B36156314560701006E6EDD /* RangeViewCandidateCell.xib */,
+				0B36156A14561955006E6EDD /* CandidateWriteInCell.h */,
+				0B36156B14561956006E6EDD /* CandidateWriteInCell.m */,
+				0B36156514560716006E6EDD /* RangeViewCandidateWriteInCell.xib */,
+				0BF2960D14566ED80083F2A2 /* RangeDataViewerViewController.h */,
+				0BF2960E14566ED80083F2A2 /* RangeDataViewerViewController.m */,
+				0BF2960F14566ED90083F2A2 /* RangeDataViewerViewController.xib */,
+				0BF2961314566EFE0083F2A2 /* RangeStatsViewerViewController.h */,
+				0BF2961414566EFE0083F2A2 /* RangeStatsViewerViewController.m */,
+				0BF2961514566EFE0083F2A2 /* RangeStatsViewerViewController.xib */,
+				0BABD2891518405B00D8AA43 /* RangeInstructionsViewController.h */,
+				0BABD28A1518405C00D8AA43 /* RangeInstructionsViewController.m */,
+				0BABD28B1518405C00D8AA43 /* RangeInstructionsViewController.xib */,
+				0BE4B49A1584D19300B57257 /* RangeSpreadsheetGenerator.h */,
+				0BE4B49B1584D19300B57257 /* RangeSpreadsheetGenerator.m */,
+			);
+			name = RangeFiles;
+			sourceTree = "<group>";
+		};
+		0B369F2116BF901E0017B936 /* ElectoralExperiment */ = {
+			isa = PBXGroup;
+			children = (
+				0B369F2216BF901E0017B936 /* AdminMenuOptions.h */,
+				0B369F2316BF901E0017B936 /* AdminViewController.h */,
+				0B369F2416BF901E0017B936 /* AdminViewController.m */,
+				0B369F2516BF901E0017B936 /* AdminViewController.xib */,
+				0B369F2616BF901E0017B936 /* AgeGroupQuestionaire.h */,
+				0B369F2716BF901E0017B936 /* AgeGroupQuestionaire.m */,
+				0B369F2816BF901E0017B936 /* AnnualHousholdIncomeQuestionaire.h */,
+				0B369F2916BF901E0017B936 /* AnnualHousholdIncomeQuestionaire.m */,
+				0B369F2A16BF901E0017B936 /* ApprovalDataViewerViewController.h */,
+				0B369F2B16BF901E0017B936 /* ApprovalDataViewerViewController.m */,
+				0B369F2C16BF901E0017B936 /* ApprovalDataViewerViewController.xib */,
+				0B369F2D16BF901E0017B936 /* ApprovalInstructionsViewController.h */,
+				0B369F2E16BF901E0017B936 /* ApprovalInstructionsViewController.m */,
+				0B369F2F16BF901E0017B936 /* ApprovalInstructionsViewController.xib */,
+				0B369F3016BF901E0017B936 /* ApprovalMessagesViewController.h */,
+				0B369F3116BF901E0017B936 /* ApprovalMessagesViewController.m */,
+				0B369F3216BF901E0017B936 /* ApprovalMessagesViewController.xib */,
+				0B369F3316BF901E0017B936 /* ApprovalSpreadsheetGenerator.h */,
+				0B369F3416BF901E0017B936 /* ApprovalSpreadsheetGenerator.m */,
+				0B369F3516BF901E0017B936 /* ApprovalStatsViewerViewController.h */,
+				0B369F3616BF901E0017B936 /* ApprovalStatsViewerViewController.m */,
+				0B369F3716BF901E0017B936 /* ApprovalStatsViewerViewController.xib */,
+				0B369F3816BF901E0017B936 /* ApprovalViewController.h */,
+				0B369F3916BF901E0017B936 /* ApprovalViewController.m */,
+				0B369F3A16BF901E0017B936 /* ApprovalViewController.xib */,
+				0B369F3B16BF901E0017B936 /* blueButton.png */,
+				0B369F3C16BF901E0017B936 /* CandidateApprovalCell.h */,
+				0B369F3D16BF901E0017B936 /* CandidateApprovalCell.m */,
+				0B369F3E16BF901E0017B936 /* CandidateApprovalCell.xib */,
+				0B369F3F16BF901E0017B936 /* CandidateCell.h */,
+				0B369F4016BF901E0017B936 /* CandidateCell.m */,
+				0B369F4116BF901E0017B936 /* CandidateIRVcell.h */,
+				0B369F4216BF901E0017B936 /* CandidateIRVcell.m */,
+				0B369F4316BF901E0017B936 /* CandidateIRVcell.xib */,
+				0B369F4416BF901E0017B936 /* CandidatePluralitycell.h */,
+				0B369F4516BF901E0017B936 /* CandidatePluralitycell.m */,
+				0B369F4616BF901E0017B936 /* CandidatePluralitycell.xib */,
+				0B369F4716BF901E0017B936 /* CandidateWriteInApprovalCell.h */,
+				0B369F4816BF901E0017B936 /* CandidateWriteInApprovalCell.m */,
+				0B369F4916BF901E0017B936 /* CandidateWriteInApprovalCell.xib */,
+				0B369F4A16BF901E0017B936 /* CandidateWriteInCell.h */,
+				0B369F4B16BF901E0017B936 /* CandidateWriteInCell.m */,
+				0B369F4C16BF901E0017B936 /* CandidateWriteInIRVcell.h */,
+				0B369F4D16BF901E0017B936 /* CandidateWriteInIRVcell.m */,
+				0B369F4E16BF901E0017B936 /* CandidateWriteInIRVcell.xib */,
+				0B369F4F16BF901E0017B936 /* CandidateWriteInPluralitycell.h */,
+				0B369F5016BF901E0017B936 /* CandidateWriteInPluralitycell.m */,
+				0B369F5116BF901E0017B936 /* CandidateWriteInPluralitycell.xib */,
+				0B369F5216BF901E0017B936 /* CreateCandidateListViewController.h */,
+				0B369F5316BF901E0017B936 /* CreateCandidateListViewController.m */,
+				0B369F5416BF901E0017B936 /* CreateCandidateListViewController.xib */,
+				0B369F5516BF901E0017B936 /* DataImporterThruEmailViewController.h */,
+				0B369F5616BF901E0017B936 /* DataImporterThruEmailViewController.m */,
+				0B369F5716BF901E0017B936 /* DataImporterThruEmailViewController.xib */,
+				0B369F5816BF901E0017B936 /* DemographicsDBModel.xcdatamodeld */,
+				0B369F5A16BF901E0017B936 /* ElectoralExperiment-Info.plist */,
+				0B369F5B16BF901E0017B936 /* ElectoralExperiment-Prefix.pch */,
+				0B369F5C16BF901E0017B936 /* ElectoralExperimentAppDelegate.h */,
+				0B369F5D16BF901E0017B936 /* ElectoralExperimentAppDelegate.m */,
+				0B369F5E16BF901E0017B936 /* ElectoralExperiments.h */,
+				0B369F5F16BF901E0017B936 /* EmailComposerViewController.h */,
+				0B369F6016BF901E0017B936 /* EmailComposerViewController.m */,
+				0B369F6116BF901E0017B936 /* EmailComposerViewController.xib */,
+				0B369F6216BF901E0017B936 /* InfoPlist.strings */,
+				0B369F6416BF901E0017B936 /* MainWindow.xib */,
+				0B369F6616BF901E0017B936 /* RootViewController.xib */,
+				0B369F6816BF901E0017B936 /* FileHandle.h */,
+				0B369F6916BF901E0017B936 /* FileHandle.m */,
+				0B369F6A16BF901E0017B936 /* GenderQuestionaire.h */,
+				0B369F6B16BF901E0017B936 /* GenderQuestionaire.m */,
+				0B369F6C16BF901E0017B936 /* greenButton.png */,
+				0B369F6D16BF901E0017B936 /* iPad */,
+				0B369F7016BF901E0017B936 /* IRV_ResultsViewController.h */,
+				0B369F7116BF901E0017B936 /* IRV_ResultsViewController.m */,
+				0B369F7216BF901E0017B936 /* IRV_ResultsViewController.xib */,
+				0B369F7316BF901E0017B936 /* IRVdataViewerViewController.h */,
+				0B369F7416BF901E0017B936 /* IRVdataViewerViewController.m */,
+				0B369F7516BF901E0017B936 /* IRVdataViewerViewController.xib */,
+				0B369F7616BF901E0017B936 /* IRVinstructionsViewController.h */,
+				0B369F7716BF901E0017B936 /* IRVinstructionsViewController.m */,
+				0B369F7816BF901E0017B936 /* IRVinstructionsViewController.xib */,
+				0B369F7916BF901E0017B936 /* IRVmessagesViewController.h */,
+				0B369F7A16BF901E0017B936 /* IRVmessagesViewController.m */,
+				0B369F7B16BF901E0017B936 /* IRVmessagesViewController.xib */,
+				0B369F7C16BF901E0017B936 /* IRVSpreadsheetGenerator.h */,
+				0B369F7D16BF901E0017B936 /* IRVSpreadsheetGenerator.m */,
+				0B369F7E16BF901F0017B936 /* IRVstatsViewerViewController.h */,
+				0B369F7F16BF901F0017B936 /* IRVstatsViewerViewController.m */,
+				0B369F8016BF901F0017B936 /* IRVstatsViewerViewController.xib */,
+				0B369F8116BF901F0017B936 /* IRVviewController.h */,
+				0B369F8216BF901F0017B936 /* IRVviewController.m */,
+				0B369F8316BF901F0017B936 /* IRVviewController.xib */,
+				0B369F8416BF901F0017B936 /* main.m */,
+				0B369F8516BF901F0017B936 /* MostImportantIssueQuestionaire.h */,
+				0B369F8616BF901F0017B936 /* MostImportantIssueQuestionaire.m */,
+				0B369F8716BF901F0017B936 /* MySingelton.h */,
+				0B369F8816BF901F0017B936 /* MySingelton.m */,
+				0B369F8916BF901F0017B936 /* PluralityDataViewerViewController.h */,
+				0B369F8A16BF901F0017B936 /* PluralityDataViewerViewController.m */,
+				0B369F8B16BF901F0017B936 /* PluralityDataViewerViewController.xib */,
+				0B369F8C16BF901F0017B936 /* PluralityInstructionsViewController.h */,
+				0B369F8D16BF901F0017B936 /* PluralityInstructionsViewController.m */,
+				0B369F8E16BF901F0017B936 /* PluralityInstructionsViewController.xib */,
+				0B369F8F16BF901F0017B936 /* PluralityMessagesViewController.h */,
+				0B369F9016BF901F0017B936 /* PluralityMessagesViewController.m */,
+				0B369F9116BF901F0017B936 /* PluralityMessagesViewController.xib */,
+				0B369F9216BF901F0017B936 /* PluralitySpreadsheetGenerator.h */,
+				0B369F9316BF901F0017B936 /* PluralitySpreadsheetGenerator.m */,
+				0B369F9416BF901F0017B936 /* PluralityStatsViewerViewController.h */,
+				0B369F9516BF901F0017B936 /* PluralityStatsViewerViewController.m */,
+				0B369F9616BF901F0017B936 /* PluralityStatsViewerViewController.xib */,
+				0B369F9716BF901F0017B936 /* PluralityViewController.h */,
+				0B369F9816BF901F0017B936 /* PluralityViewController.m */,
+				0B369F9916BF901F0017B936 /* PluralityViewController.xib */,
+				0B369F9A16BF901F0017B936 /* PoliticalAffiliationQuestionaire.h */,
+				0B369F9B16BF901F0017B936 /* PoliticalAffiliationQuestionaire.m */,
+				0B369F9C16BF901F0017B936 /* purpleButton.png */,
+				0B369F9D16BF901F0017B936 /* RaceQuestionaire.h */,
+				0B369F9E16BF901F0017B936 /* RaceQuestionaire.m */,
+				0B369F9F16BF901F0017B936 /* RangeDataViewerViewController.h */,
+				0B369FA016BF901F0017B936 /* RangeDataViewerViewController.m */,
+				0B369FA116BF901F0017B936 /* RangeDataViewerViewController.xib */,
+				0B369FA216BF901F0017B936 /* RangeInstructionsViewController.h */,
+				0B369FA316BF901F0017B936 /* RangeInstructionsViewController.m */,
+				0B369FA416BF901F0017B936 /* RangeInstructionsViewController.xib */,
+				0B369FA516BF901F0017B936 /* RangeMessagesViewController.h */,
+				0B369FA616BF901F0017B936 /* RangeMessagesViewController.m */,
+				0B369FA716BF901F0017B936 /* RangeMessagesViewController.xib */,
+				0B369FA816BF901F0017B936 /* RangeSpreadsheetGenerator.h */,
+				0B369FA916BF901F0017B936 /* RangeSpreadsheetGenerator.m */,
+				0B369FAA16BF901F0017B936 /* RangeStatsViewerViewController.h */,
+				0B369FAB16BF901F0017B936 /* RangeStatsViewerViewController.m */,
+				0B369FAC16BF901F0017B936 /* RangeStatsViewerViewController.xib */,
+				0B369FAD16BF901F0017B936 /* RangeViewCandidateCell.xib */,
+				0B369FAE16BF901F0017B936 /* RangeViewCandidateWriteInCell.xib */,
+				0B369FAF16BF901F0017B936 /* RangeViewController.h */,
+				0B369FB016BF901F0017B936 /* RangeViewController.m */,
+				0B369FB116BF901F0017B936 /* RangeViewController.xib */,
+				0B369FB216BF901F0017B936 /* redButton.png */,
+				0B369FB316BF901F0017B936 /* RootViewController.h */,
+				0B369FB416BF901F0017B936 /* RootViewController.m */,
+				0B369FB516BF901F0017B936 /* SizeConstants.h */,
+				0B369FB616BF901F0017B936 /* UserDemographicCell.h */,
+				0B369FB716BF901F0017B936 /* UserDemographicCell.m */,
+				0B369FB816BF901F0017B936 /* UserDemographicCell.xib */,
+				0B369FB916BF901F0017B936 /* UserDemographicsViewController.h */,
+				0B369FBA16BF901F0017B936 /* UserDemographicsViewController.m */,
+				0B369FBB16BF901F0017B936 /* UserDemographicsViewController.xib */,
+				0B369FBC16BF901F0017B936 /* UserDemographicTableViewController.h */,
+				0B369FBD16BF901F0017B936 /* UserDemographicTableViewController.m */,
+				0B369FBE16BF901F0017B936 /* UserDemographicTableViewController.xib */,
+				0B369FBF16BF901F0017B936 /* UserID.h */,
+				0B369FC016BF901F0017B936 /* UserID.m */,
+				0B369FC116BF901F0017B936 /* whiteButton.png */,
+			);
+			path = ElectoralExperiment;
+			sourceTree = "<group>";
+		};
+		0B369F6D16BF901E0017B936 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0B369F6E16BF901E0017B936 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		0B4B892C1579CB72006C4937 /* Create Candidate/Item List */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1F414509FA400543234 /* CreateCandidateListViewController.h */,
+				0BF4B1F514509FA400543234 /* CreateCandidateListViewController.m */,
+				0BF4B1F614509FA400543234 /* CreateCandidateListViewController.xib */,
+			);
+			name = "Create Candidate/Item List";
+			sourceTree = "<group>";
+		};
+		0B4B892D1579CBA2006C4937 /* IRV User Messages */ = {
+			isa = PBXGroup;
+			children = (
+				0BB298E6151F571000BA4C4D /* IRVmessagesViewController.h */,
+				0BB298E7151F571000BA4C4D /* IRVmessagesViewController.m */,
+				0BB298E8151F571000BA4C4D /* IRVmessagesViewController.xib */,
+			);
+			name = "IRV User Messages";
+			sourceTree = "<group>";
+		};
+		0B4B892E1579CBBE006C4937 /* Approval User Messages */ = {
+			isa = PBXGroup;
+			children = (
+				0BB298EB151F572B00BA4C4D /* ApprovalMessagesViewController.h */,
+				0BB298EC151F572B00BA4C4D /* ApprovalMessagesViewController.m */,
+				0BB298ED151F572B00BA4C4D /* ApprovalMessagesViewController.xib */,
+			);
+			name = "Approval User Messages";
+			sourceTree = "<group>";
+		};
+		0B4B892F1579CBD6006C4937 /* Range User Messages */ = {
+			isa = PBXGroup;
+			children = (
+				0BB298F0151F573E00BA4C4D /* RangeMessagesViewController.h */,
+				0BB298F1151F573E00BA4C4D /* RangeMessagesViewController.m */,
+				0BB298F2151F573F00BA4C4D /* RangeMessagesViewController.xib */,
+			);
+			name = "Range User Messages";
+			sourceTree = "<group>";
+		};
+		0B4B89301579CBE8006C4937 /* Plurality User Messages */ = {
+			isa = PBXGroup;
+			children = (
+				0BB298F5151F575900BA4C4D /* PluralityMessagesViewController.h */,
+				0BB298F6151F575A00BA4C4D /* PluralityMessagesViewController.m */,
+				0BB298F7151F575A00BA4C4D /* PluralityMessagesViewController.xib */,
+			);
+			name = "Plurality User Messages";
+			sourceTree = "<group>";
+		};
+		0B4B89311579CC06006C4937 /* Email Composer */ = {
+			isa = PBXGroup;
+			children = (
+				0BB4EF141526A0C5002279B4 /* EmailComposerViewController.h */,
+				0BB4EF151526A0C5002279B4 /* EmailComposerViewController.m */,
+				0BB4EF161526A0C5002279B4 /* EmailComposerViewController.xib */,
+			);
+			name = "Email Composer";
+			sourceTree = "<group>";
+		};
+		0B4B89321579CC29006C4937 /* Admin View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1EA144F623B00543234 /* AdminViewController.h */,
+				0BF4B1EB144F623B00543234 /* AdminViewController.m */,
+				0BF4B1EC144F623B00543234 /* AdminViewController.xib */,
+			);
+			name = "Admin View";
+			sourceTree = "<group>";
+		};
+		0B4B89331579CC69006C4937 /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B654B1A1524C235005F8DE1 /* whiteButton.png */,
+				0BCFF672152414F20013C9F0 /* redButton.png */,
+				0BCFF67815241B250013C9F0 /* purpleButton.png */,
+				0BCFF66E152414F20013C9F0 /* greenButton.png */,
+				0B654B0F1524C235005F8DE1 /* blueButton.png */,
+			);
+			name = "Image Files";
+			sourceTree = "<group>";
+		};
+		0B4B89341579CE05006C4937 /* IRV Results View */ = {
+			isa = PBXGroup;
+			children = (
+				0B4B89351579CED5006C4937 /* IRV_ResultsViewController.h */,
+				0B4B89361579CED5006C4937 /* IRV_ResultsViewController.m */,
+				0B4B89371579CED5006C4937 /* IRV_ResultsViewController.xib */,
+			);
+			name = "IRV Results View";
+			sourceTree = "<group>";
+		};
+		0B654B101524C235005F8DE1 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0B654B111524C235005F8DE1 /* InfoPlist.strings */,
+				0B654B131524C235005F8DE1 /* MainWindow.xib */,
+				0B654B151524C235005F8DE1 /* RootViewController.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		0B654B171524C235005F8DE1 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0B654B181524C235005F8DE1 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		0B7D5BDD15CE2E9700C76A57 /* UserDemographicsFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5622315EAF8E400C11732 /* User Demographic Data Viewer */,
+				0B7D5BDE15CE2EFD00C76A57 /* UserDemographicsViewController.h */,
+				0B7D5BDF15CE2EFD00C76A57 /* UserDemographicsViewController.m */,
+				0B7D5BE015CE2EFD00C76A57 /* UserDemographicsViewController.xib */,
+				0BF561C315E9318100C11732 /* DemographicsDBModel.xcdatamodeld */,
+				0BF5621F15EAECF800C11732 /* UserID.h */,
+				0BF5622015EAECF800C11732 /* UserID.m */,
+				0BF5621C15EAECF800C11732 /* MostImportantIssueQuestionaire.h */,
+				0BF5621D15EAECF800C11732 /* MostImportantIssueQuestionaire.m */,
+				0BF5621915EAECF800C11732 /* GenderQuestionaire.h */,
+				0BF5621A15EAECF800C11732 /* GenderQuestionaire.m */,
+				0BF5621615EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.h */,
+				0BF5621715EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.m */,
+				0BF5621315EAECF600C11732 /* PoliticalAffiliationQuestionaire.h */,
+				0BF5621415EAECF600C11732 /* PoliticalAffiliationQuestionaire.m */,
+				0BF5621015EAECF600C11732 /* RaceQuestionaire.h */,
+				0BF5621115EAECF600C11732 /* RaceQuestionaire.m */,
+				0BF5620D15EAECF500C11732 /* AgeGroupQuestionaire.h */,
+				0BF5620E15EAECF500C11732 /* AgeGroupQuestionaire.m */,
+			);
+			name = UserDemographicsFiles;
+			sourceTree = "<group>";
+		};
+		0BCFF66F152414F20013C9F0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0BCFF670152414F20013C9F0 /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		0BD301BD149F01D100C68B1D /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0BD301BE149F01D200C68B1D /* InfoPlist.strings */,
+				0BD301C0149F01D200C68B1D /* MainWindow.xib */,
+				0BD301C2149F01D200C68B1D /* RootViewController.xib */,
+			);
+			name = en.lproj;
+			path = ElectoralExperiment/en.lproj;
+			sourceTree = "<group>";
+		};
+		0BF23697166AE81600F53FE6 /* Data Importer Thru Email */ = {
+			isa = PBXGroup;
+			children = (
+				0BF23699166AE87900F53FE6 /* DataImporterThruEmailViewController.h */,
+				0BF2369A166AE87900F53FE6 /* DataImporterThruEmailViewController.m */,
+				0BF2369B166AE87900F53FE6 /* DataImporterThruEmailViewController.xib */,
+			);
+			name = "Data Importer Thru Email";
+			sourceTree = "<group>";
+		};
+		0BF296181457CDFB0083F2A2 /* IRVfiles */ = {
+			isa = PBXGroup;
+			children = (
+				0BF296191457CECA0083F2A2 /* IRVviewController.h */,
+				0BF2961A1457CECA0083F2A2 /* IRVviewController.m */,
+				0BF2961B1457CECA0083F2A2 /* IRVviewController.xib */,
+				0BF2961E145851F30083F2A2 /* CandidateWriteInIRVcell.h */,
+				0BF2961F145851F40083F2A2 /* CandidateWriteInIRVcell.m */,
+				0BF296211458521E0083F2A2 /* CandidateWriteInIRVcell.xib */,
+				0BF2962514586E0E0083F2A2 /* CandidateIRVcell.h */,
+				0BF2962614586E0E0083F2A2 /* CandidateIRVcell.m */,
+				0BF29623145857680083F2A2 /* CandidateIRVcell.xib */,
+				0BF296281459B57D0083F2A2 /* IRVdataViewerViewController.h */,
+				0BF296291459B57E0083F2A2 /* IRVdataViewerViewController.m */,
+				0BF2962A1459B57F0083F2A2 /* IRVdataViewerViewController.xib */,
+				0BF2962D1459B5960083F2A2 /* IRVstatsViewerViewController.h */,
+				0BF2962E1459B5960083F2A2 /* IRVstatsViewerViewController.m */,
+				0BF2962F1459B5970083F2A2 /* IRVstatsViewerViewController.xib */,
+				0BB298E0151E903D00BA4C4D /* IRVinstructionsViewController.h */,
+				0BB298E1151E903E00BA4C4D /* IRVinstructionsViewController.m */,
+				0BB298E2151E903E00BA4C4D /* IRVinstructionsViewController.xib */,
+				0BE4B4A21584E60D00B57257 /* IRVSpreadsheetGenerator.h */,
+				0BE4B4A31584E60D00B57257 /* IRVSpreadsheetGenerator.m */,
+				0B4B89341579CE05006C4937 /* IRV Results View */,
+			);
+			name = IRVfiles;
+			sourceTree = "<group>";
+		};
+		0BF29632145AC0DE0083F2A2 /* ApprovalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0BF29638145AC1570083F2A2 /* ApprovalViewController.h */,
+				0BF29639145AC1580083F2A2 /* ApprovalViewController.m */,
+				0BF2963A145AC1580083F2A2 /* ApprovalViewController.xib */,
+				0BF29642145AC5DC0083F2A2 /* CandidateApprovalCell.h */,
+				0BF29643145AC5DD0083F2A2 /* CandidateApprovalCell.m */,
+				0BF2964A145AC65A0083F2A2 /* CandidateApprovalCell.xib */,
+				0BF29645145AC6140083F2A2 /* CandidateWriteInApprovalCell.h */,
+				0BF29646145AC6140083F2A2 /* CandidateWriteInApprovalCell.m */,
+				0BF29648145AC6340083F2A2 /* CandidateWriteInApprovalCell.xib */,
+				0B19588E145F917200F46E5D /* ApprovalDataViewerViewController.h */,
+				0B19588F145F917200F46E5D /* ApprovalDataViewerViewController.m */,
+				0B195890145F917200F46E5D /* ApprovalDataViewerViewController.xib */,
+				0B195894145F919F00F46E5D /* ApprovalStatsViewerViewController.h */,
+				0B195895145F919F00F46E5D /* ApprovalStatsViewerViewController.m */,
+				0B195896145F919F00F46E5D /* ApprovalStatsViewerViewController.xib */,
+				0B704FE3151D7784003FD37E /* ApprovalInstructionsViewController.h */,
+				0B704FE4151D7784003FD37E /* ApprovalInstructionsViewController.m */,
+				0B704FE5151D7784003FD37E /* ApprovalInstructionsViewController.xib */,
+				0BEED8981584EE06007E24B3 /* ApprovalSpreadsheetGenerator.h */,
+				0BEED8991584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m */,
+			);
+			name = ApprovalFiles;
+			sourceTree = "<group>";
+		};
+		0BF4B1B6144F4A5C00543234 = {
+			isa = PBXGroup;
+			children = (
+				0B369F2116BF901E0017B936 /* ElectoralExperiment */,
+				0B369FC216BF901F0017B936 /* MakeVotingCount.psd */,
+				0B369FC316BF901F0017B936 /* README.txt */,
+				0B369FC416BF901F0017B936 /* Terms And Conditions.pdf */,
+				0B369FC516BF901F0017B936 /* Terms And Conditions.rtf */,
+				0BD054611675027E00F91EE9 /* Default-568h@2x.png */,
+				0BF5620615EA6AAE00C11732 /* CoreData.framework */,
+				0B7D5BDB15CE234000C76A57 /* MakeVotingCount.png */,
+				0BB4EF11152699CF002279B4 /* MessageUI.framework */,
+				0BD301BD149F01D100C68B1D /* en.lproj */,
+				0BF4B1CB144F4A5D00543234 /* ElectoralExperiment */,
+				0BF4B1C4144F4A5D00543234 /* Frameworks */,
+				0BF4B1C2144F4A5D00543234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BF4B1C2144F4A5D00543234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1C1144F4A5D00543234 /* ElectoralExperiment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BF4B1C4144F4A5D00543234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1C5144F4A5D00543234 /* UIKit.framework */,
+				0BF4B1C7144F4A5D00543234 /* Foundation.framework */,
+				0BF4B1C9144F4A5D00543234 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BF4B1CB144F4A5D00543234 /* ElectoralExperiment */ = {
+			isa = PBXGroup;
+			children = (
+				0B19589C145FA51600F46E5D /* MySingelton.h */,
+				0B19589D145FA51600F46E5D /* MySingelton.m */,
+				0B36154C145327CA006E6EDD /* kConstants */,
+				0B36153B1452799F006E6EDD /* PluralityFiles */,
+				0B36155714551DD2006E6EDD /* RangeFiles */,
+				0BF296181457CDFB0083F2A2 /* IRVfiles */,
+				0BF29632145AC0DE0083F2A2 /* ApprovalFiles */,
+				0B7D5BDD15CE2E9700C76A57 /* UserDemographicsFiles */,
+				0BF4B1F314509EA000543234 /* AdminFiles */,
+				0BF4B1E5144F4A7600543234 /* iPad */,
+				0BF4B1D4144F4A5D00543234 /* ElectoralExperimentAppDelegate.h */,
+				0BF4B1D5144F4A5D00543234 /* ElectoralExperimentAppDelegate.m */,
+				0BF4B1DA144F4A5D00543234 /* RootViewController.h */,
+				0BF4B1DB144F4A5D00543234 /* RootViewController.m */,
+				0BF4B1CC144F4A5D00543234 /* Supporting Files */,
+			);
+			path = ElectoralExperiment;
+			sourceTree = "<group>";
+		};
+		0BF4B1CC144F4A5D00543234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1F014507DB700543234 /* FileHandle.h */,
+				0BF4B1F114507DB700543234 /* FileHandle.m */,
+				0B4B89331579CC69006C4937 /* Image Files */,
+				0B654B101524C235005F8DE1 /* en.lproj */,
+				0B654B171524C235005F8DE1 /* iPad */,
+				0BCFF66F152414F20013C9F0 /* iPad */,
+				0BF4B1CD144F4A5D00543234 /* ElectoralExperiment-Info.plist */,
+				0BF4B1CE144F4A5D00543234 /* InfoPlist.strings */,
+				0BF4B1D1144F4A5D00543234 /* ElectoralExperiment-Prefix.pch */,
+				0BF4B1D2144F4A5D00543234 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BF4B1E5144F4A7600543234 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4B1E6144F4A7B00543234 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		0BF4B1F314509EA000543234 /* AdminFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0BF23697166AE81600F53FE6 /* Data Importer Thru Email */,
+				0B4B89321579CC29006C4937 /* Admin View */,
+				0B4B892C1579CB72006C4937 /* Create Candidate/Item List */,
+				0B4B892D1579CBA2006C4937 /* IRV User Messages */,
+				0B4B892E1579CBBE006C4937 /* Approval User Messages */,
+				0B4B892F1579CBD6006C4937 /* Range User Messages */,
+				0B4B89301579CBE8006C4937 /* Plurality User Messages */,
+				0B4B89311579CC06006C4937 /* Email Composer */,
+			);
+			name = AdminFiles;
+			sourceTree = "<group>";
+		};
+		0BF5622315EAF8E400C11732 /* User Demographic Data Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5622415EAF95600C11732 /* UserDemographicTableViewController.h */,
+				0BF5622515EAF95600C11732 /* UserDemographicTableViewController.m */,
+				0BF5622615EAF95600C11732 /* UserDemographicTableViewController.xib */,
+				0BF5622915EAFECA00C11732 /* UserDemographicCell.xib */,
+				0BF5622B15EAFF0F00C11732 /* UserDemographicCell.h */,
+				0BF5622C15EAFF0F00C11732 /* UserDemographicCell.m */,
+			);
+			name = "User Demographic Data Viewer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BF4B1C0144F4A5D00543234 /* ElectoralExperiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BF4B1E2144F4A5D00543234 /* Build configuration list for PBXNativeTarget "ElectoralExperiment" */;
+			buildPhases = (
+				0BF4B1BD144F4A5D00543234 /* Sources */,
+				0BF4B1BE144F4A5D00543234 /* Frameworks */,
+				0BF4B1BF144F4A5D00543234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElectoralExperiment;
+			productName = ElectoralExperiment;
+			productReference = 0BF4B1C1144F4A5D00543234 /* ElectoralExperiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BF4B1B8144F4A5C00543234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 0BF4B1BB144F4A5C00543234 /* Build configuration list for PBXProject "ElectoralExperiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BF4B1B6144F4A5C00543234;
+			productRefGroup = 0BF4B1C2144F4A5D00543234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BF4B1C0144F4A5D00543234 /* ElectoralExperiment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BF4B1BF144F4A5D00543234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF4B1D0144F4A5D00543234 /* InfoPlist.strings in Resources */,
+				0BF4B1E8144F4A7B00543234 /* MainWindow-iPad.xib in Resources */,
+				0BF4B1EE144F623B00543234 /* AdminViewController.xib in Resources */,
+				0BF4B1F814509FA400543234 /* CreateCandidateListViewController.xib in Resources */,
+				0B36154B14527DEA006E6EDD /* PluralityViewController.xib in Resources */,
+				0B36155114544FEF006E6EDD /* PluralityDataViewerViewController.xib in Resources */,
+				0B361556145454AC006E6EDD /* PluralityStatsViewerViewController.xib in Resources */,
+				0B36155C14551E33006E6EDD /* RangeViewController.xib in Resources */,
+				0B36156414560701006E6EDD /* RangeViewCandidateCell.xib in Resources */,
+				0B36156614560716006E6EDD /* RangeViewCandidateWriteInCell.xib in Resources */,
+				0BF2961114566ED90083F2A2 /* RangeDataViewerViewController.xib in Resources */,
+				0BF2961714566EFE0083F2A2 /* RangeStatsViewerViewController.xib in Resources */,
+				0BF2961D1457CECA0083F2A2 /* IRVviewController.xib in Resources */,
+				0BF296221458521E0083F2A2 /* CandidateWriteInIRVcell.xib in Resources */,
+				0BF29624145857680083F2A2 /* CandidateIRVcell.xib in Resources */,
+				0BF2962C1459B57F0083F2A2 /* IRVdataViewerViewController.xib in Resources */,
+				0BF296311459B5970083F2A2 /* IRVstatsViewerViewController.xib in Resources */,
+				0BF2963C145AC1580083F2A2 /* ApprovalViewController.xib in Resources */,
+				0BF29649145AC6350083F2A2 /* CandidateWriteInApprovalCell.xib in Resources */,
+				0BF2964B145AC65B0083F2A2 /* CandidateApprovalCell.xib in Resources */,
+				0B195892145F917200F46E5D /* ApprovalDataViewerViewController.xib in Resources */,
+				0B195898145F919F00F46E5D /* ApprovalStatsViewerViewController.xib in Resources */,
+				0BD301C4149F01D200C68B1D /* InfoPlist.strings in Resources */,
+				0BD301C5149F01D200C68B1D /* MainWindow.xib in Resources */,
+				0BD301C6149F01D200C68B1D /* RootViewController.xib in Resources */,
+				0B2EB410150FCEF8004E7AC5 /* CandidateWriteInPluralitycell.xib in Resources */,
+				0B2EB419150FD6F2004E7AC5 /* CandidatePluralitycell.xib in Resources */,
+				0B2EB4231511A7F0004E7AC5 /* PluralityInstructionsViewController.xib in Resources */,
+				0BABD28D1518405C00D8AA43 /* RangeInstructionsViewController.xib in Resources */,
+				0B704FE7151D7784003FD37E /* ApprovalInstructionsViewController.xib in Resources */,
+				0BB298E4151E903E00BA4C4D /* IRVinstructionsViewController.xib in Resources */,
+				0BB298EA151F571000BA4C4D /* IRVmessagesViewController.xib in Resources */,
+				0BB298EF151F572B00BA4C4D /* ApprovalMessagesViewController.xib in Resources */,
+				0BB298F4151F573F00BA4C4D /* RangeMessagesViewController.xib in Resources */,
+				0BB298F9151F575A00BA4C4D /* PluralityMessagesViewController.xib in Resources */,
+				0BCFF674152414F20013C9F0 /* greenButton.png in Resources */,
+				0BCFF675152414F20013C9F0 /* MainWindow-iPad.xib in Resources */,
+				0BCFF676152414F20013C9F0 /* redButton.png in Resources */,
+				0BCFF67915241B250013C9F0 /* purpleButton.png in Resources */,
+				0B654B1B1524C235005F8DE1 /* blueButton.png in Resources */,
+				0B654B1C1524C235005F8DE1 /* InfoPlist.strings in Resources */,
+				0B654B1D1524C235005F8DE1 /* MainWindow.xib in Resources */,
+				0B654B1E1524C235005F8DE1 /* RootViewController.xib in Resources */,
+				0B654B1F1524C235005F8DE1 /* MainWindow-iPad.xib in Resources */,
+				0B654B201524C235005F8DE1 /* whiteButton.png in Resources */,
+				0BB4EF181526A0C5002279B4 /* EmailComposerViewController.xib in Resources */,
+				0B4B89391579CED5006C4937 /* IRV_ResultsViewController.xib in Resources */,
+				0B7D5BDC15CE234000C76A57 /* MakeVotingCount.png in Resources */,
+				0B7D5BE215CE2EFD00C76A57 /* UserDemographicsViewController.xib in Resources */,
+				0BF5622815EAF95600C11732 /* UserDemographicTableViewController.xib in Resources */,
+				0BF5622A15EAFECA00C11732 /* UserDemographicCell.xib in Resources */,
+				0BF2369D166AE87900F53FE6 /* DataImporterThruEmailViewController.xib in Resources */,
+				0BD054621675027E00F91EE9 /* Default-568h@2x.png in Resources */,
+				0B369FC716BF901F0017B936 /* AdminViewController.xib in Resources */,
+				0B369FCB16BF901F0017B936 /* ApprovalDataViewerViewController.xib in Resources */,
+				0B369FCD16BF901F0017B936 /* ApprovalInstructionsViewController.xib in Resources */,
+				0B369FCF16BF901F0017B936 /* ApprovalMessagesViewController.xib in Resources */,
+				0B369FD216BF901F0017B936 /* ApprovalStatsViewerViewController.xib in Resources */,
+				0B369FD416BF901F0017B936 /* ApprovalViewController.xib in Resources */,
+				0B369FD516BF901F0017B936 /* blueButton.png in Resources */,
+				0B369FD716BF901F0017B936 /* CandidateApprovalCell.xib in Resources */,
+				0B369FDA16BF901F0017B936 /* CandidateIRVcell.xib in Resources */,
+				0B369FDC16BF901F0017B936 /* CandidatePluralitycell.xib in Resources */,
+				0B369FDE16BF901F0017B936 /* CandidateWriteInApprovalCell.xib in Resources */,
+				0B369FE116BF901F0017B936 /* CandidateWriteInIRVcell.xib in Resources */,
+				0B369FE316BF901F0017B936 /* CandidateWriteInPluralitycell.xib in Resources */,
+				0B369FE516BF901F0017B936 /* CreateCandidateListViewController.xib in Resources */,
+				0B369FE716BF901F0017B936 /* DataImporterThruEmailViewController.xib in Resources */,
+				0B369FE916BF901F0017B936 /* ElectoralExperiment-Info.plist in Resources */,
+				0B369FEC16BF901F0017B936 /* EmailComposerViewController.xib in Resources */,
+				0B369FED16BF901F0017B936 /* InfoPlist.strings in Resources */,
+				0B369FEE16BF901F0017B936 /* MainWindow.xib in Resources */,
+				0B369FEF16BF901F0017B936 /* RootViewController.xib in Resources */,
+				0B369FF216BF901F0017B936 /* greenButton.png in Resources */,
+				0B369FF316BF901F0017B936 /* MainWindow-iPad.xib in Resources */,
+				0B369FF516BF901F0017B936 /* IRV_ResultsViewController.xib in Resources */,
+				0B369FF716BF901F0017B936 /* IRVdataViewerViewController.xib in Resources */,
+				0B369FF916BF901F0017B936 /* IRVinstructionsViewController.xib in Resources */,
+				0B369FFB16BF901F0017B936 /* IRVmessagesViewController.xib in Resources */,
+				0B369FFE16BF901F0017B936 /* IRVstatsViewerViewController.xib in Resources */,
+				0B36A00016BF901F0017B936 /* IRVviewController.xib in Resources */,
+				0B36A00516BF901F0017B936 /* PluralityDataViewerViewController.xib in Resources */,
+				0B36A00716BF901F0017B936 /* PluralityInstructionsViewController.xib in Resources */,
+				0B36A00916BF901F0017B936 /* PluralityMessagesViewController.xib in Resources */,
+				0B36A00C16BF901F0017B936 /* PluralityStatsViewerViewController.xib in Resources */,
+				0B36A00E16BF901F0017B936 /* PluralityViewController.xib in Resources */,
+				0B36A01016BF901F0017B936 /* purpleButton.png in Resources */,
+				0B36A01316BF901F0017B936 /* RangeDataViewerViewController.xib in Resources */,
+				0B36A01516BF901F0017B936 /* RangeInstructionsViewController.xib in Resources */,
+				0B36A01716BF901F0017B936 /* RangeMessagesViewController.xib in Resources */,
+				0B36A01A16BF901F0017B936 /* RangeStatsViewerViewController.xib in Resources */,
+				0B36A01B16BF901F0017B936 /* RangeViewCandidateCell.xib in Resources */,
+				0B36A01C16BF901F0017B936 /* RangeViewCandidateWriteInCell.xib in Resources */,
+				0B36A01E16BF901F0017B936 /* RangeViewController.xib in Resources */,
+				0B36A01F16BF901F0017B936 /* redButton.png in Resources */,
+				0B36A02216BF901F0017B936 /* UserDemographicCell.xib in Resources */,
+				0B36A02416BF901F0017B936 /* UserDemographicsViewController.xib in Resources */,
+				0B36A02616BF901F0017B936 /* UserDemographicTableViewController.xib in Resources */,
+				0B36A02816BF901F0017B936 /* whiteButton.png in Resources */,
+				0B36A02916BF901F0017B936 /* MakeVotingCount.psd in Resources */,
+				0B36A02A16BF901F0017B936 /* README.txt in Resources */,
+				0B36A02B16BF901F0017B936 /* Terms And Conditions.pdf in Resources */,
+				0B36A02C16BF901F0017B936 /* Terms And Conditions.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BF4B1BD144F4A5D00543234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF4B1D3144F4A5D00543234 /* main.m in Sources */,
+				0BF4B1D6144F4A5D00543234 /* ElectoralExperimentAppDelegate.m in Sources */,
+				0BF4B1DC144F4A5D00543234 /* RootViewController.m in Sources */,
+				0BF4B1ED144F623B00543234 /* AdminViewController.m in Sources */,
+				0BF4B1F214507DB800543234 /* FileHandle.m in Sources */,
+				0BF4B1F714509FA400543234 /* CreateCandidateListViewController.m in Sources */,
+				0B36154A14527DEA006E6EDD /* PluralityViewController.m in Sources */,
+				0B36155014544FEF006E6EDD /* PluralityDataViewerViewController.m in Sources */,
+				0B361555145454AC006E6EDD /* PluralityStatsViewerViewController.m in Sources */,
+				0B36155B14551E33006E6EDD /* RangeViewController.m in Sources */,
+				0B3615691456193E006E6EDD /* CandidateCell.m in Sources */,
+				0B36156C14561956006E6EDD /* CandidateWriteInCell.m in Sources */,
+				0BF2961014566ED90083F2A2 /* RangeDataViewerViewController.m in Sources */,
+				0BF2961614566EFE0083F2A2 /* RangeStatsViewerViewController.m in Sources */,
+				0BF2961C1457CECA0083F2A2 /* IRVviewController.m in Sources */,
+				0BF29620145851F40083F2A2 /* CandidateWriteInIRVcell.m in Sources */,
+				0BF2962714586E0F0083F2A2 /* CandidateIRVcell.m in Sources */,
+				0BF2962B1459B57F0083F2A2 /* IRVdataViewerViewController.m in Sources */,
+				0BF296301459B5970083F2A2 /* IRVstatsViewerViewController.m in Sources */,
+				0BF2963B145AC1580083F2A2 /* ApprovalViewController.m in Sources */,
+				0BF29644145AC5DD0083F2A2 /* CandidateApprovalCell.m in Sources */,
+				0BF29647145AC6140083F2A2 /* CandidateWriteInApprovalCell.m in Sources */,
+				0B195891145F917200F46E5D /* ApprovalDataViewerViewController.m in Sources */,
+				0B195897145F919F00F46E5D /* ApprovalStatsViewerViewController.m in Sources */,
+				0B19589E145FA51700F46E5D /* MySingelton.m in Sources */,
+				0B2EB413150FCFBD004E7AC5 /* CandidateWriteInPluralitycell.m in Sources */,
+				0B2EB417150FD6D8004E7AC5 /* CandidatePluralitycell.m in Sources */,
+				0B2EB4221511A7F0004E7AC5 /* PluralityInstructionsViewController.m in Sources */,
+				0BABD28C1518405C00D8AA43 /* RangeInstructionsViewController.m in Sources */,
+				0B704FE6151D7784003FD37E /* ApprovalInstructionsViewController.m in Sources */,
+				0BB298E3151E903E00BA4C4D /* IRVinstructionsViewController.m in Sources */,
+				0BB298E9151F571000BA4C4D /* IRVmessagesViewController.m in Sources */,
+				0BB298EE151F572B00BA4C4D /* ApprovalMessagesViewController.m in Sources */,
+				0BB298F3151F573F00BA4C4D /* RangeMessagesViewController.m in Sources */,
+				0BB298F8151F575A00BA4C4D /* PluralityMessagesViewController.m in Sources */,
+				0BB4EF171526A0C5002279B4 /* EmailComposerViewController.m in Sources */,
+				0B4B89381579CED5006C4937 /* IRV_ResultsViewController.m in Sources */,
+				0BF3F920157EDDA500D5CAD9 /* PluralitySpreadsheetGenerator.m in Sources */,
+				0BE4B49C1584D19300B57257 /* RangeSpreadsheetGenerator.m in Sources */,
+				0BE4B4A41584E60D00B57257 /* IRVSpreadsheetGenerator.m in Sources */,
+				0BEED89A1584EE06007E24B3 /* ApprovalSpreadsheetGenerator.m in Sources */,
+				0B7D5BE115CE2EFD00C76A57 /* UserDemographicsViewController.m in Sources */,
+				0BF561C515E9318200C11732 /* DemographicsDBModel.xcdatamodeld in Sources */,
+				0BF5620F15EAECF500C11732 /* AgeGroupQuestionaire.m in Sources */,
+				0BF5621215EAECF600C11732 /* RaceQuestionaire.m in Sources */,
+				0BF5621515EAECF700C11732 /* PoliticalAffiliationQuestionaire.m in Sources */,
+				0BF5621815EAECF700C11732 /* AnnualHousholdIncomeQuestionaire.m in Sources */,
+				0BF5621B15EAECF800C11732 /* GenderQuestionaire.m in Sources */,
+				0BF5621E15EAECF800C11732 /* MostImportantIssueQuestionaire.m in Sources */,
+				0BF5622115EAECF800C11732 /* UserID.m in Sources */,
+				0BF5622715EAF95600C11732 /* UserDemographicTableViewController.m in Sources */,
+				0BF5622D15EAFF0F00C11732 /* UserDemographicCell.m in Sources */,
+				0BF2369C166AE87900F53FE6 /* DataImporterThruEmailViewController.m in Sources */,
+				0B369FC616BF901F0017B936 /* AdminViewController.m in Sources */,
+				0B369FC816BF901F0017B936 /* AgeGroupQuestionaire.m in Sources */,
+				0B369FC916BF901F0017B936 /* AnnualHousholdIncomeQuestionaire.m in Sources */,
+				0B369FCA16BF901F0017B936 /* ApprovalDataViewerViewController.m in Sources */,
+				0B369FCC16BF901F0017B936 /* ApprovalInstructionsViewController.m in Sources */,
+				0B369FCE16BF901F0017B936 /* ApprovalMessagesViewController.m in Sources */,
+				0B369FD016BF901F0017B936 /* ApprovalSpreadsheetGenerator.m in Sources */,
+				0B369FD116BF901F0017B936 /* ApprovalStatsViewerViewController.m in Sources */,
+				0B369FD316BF901F0017B936 /* ApprovalViewController.m in Sources */,
+				0B369FD616BF901F0017B936 /* CandidateApprovalCell.m in Sources */,
+				0B369FD816BF901F0017B936 /* CandidateCell.m in Sources */,
+				0B369FD916BF901F0017B936 /* CandidateIRVcell.m in Sources */,
+				0B369FDB16BF901F0017B936 /* CandidatePluralitycell.m in Sources */,
+				0B369FDD16BF901F0017B936 /* CandidateWriteInApprovalCell.m in Sources */,
+				0B369FDF16BF901F0017B936 /* CandidateWriteInCell.m in Sources */,
+				0B369FE016BF901F0017B936 /* CandidateWriteInIRVcell.m in Sources */,
+				0B369FE216BF901F0017B936 /* CandidateWriteInPluralitycell.m in Sources */,
+				0B369FE416BF901F0017B936 /* CreateCandidateListViewController.m in Sources */,
+				0B369FE616BF901F0017B936 /* DataImporterThruEmailViewController.m in Sources */,
+				0B369FE816BF901F0017B936 /* DemographicsDBModel.xcdatamodeld in Sources */,
+				0B369FEA16BF901F0017B936 /* ElectoralExperimentAppDelegate.m in Sources */,
+				0B369FEB16BF901F0017B936 /* EmailComposerViewController.m in Sources */,
+				0B369FF016BF901F0017B936 /* FileHandle.m in Sources */,
+				0B369FF116BF901F0017B936 /* GenderQuestionaire.m in Sources */,
+				0B369FF416BF901F0017B936 /* IRV_ResultsViewController.m in Sources */,
+				0B369FF616BF901F0017B936 /* IRVdataViewerViewController.m in Sources */,
+				0B369FF816BF901F0017B936 /* IRVinstructionsViewController.m in Sources */,
+				0B369FFA16BF901F0017B936 /* IRVmessagesViewController.m in Sources */,
+				0B369FFC16BF901F0017B936 /* IRVSpreadsheetGenerator.m in Sources */,
+				0B369FFD16BF901F0017B936 /* IRVstatsViewerViewController.m in Sources */,
+				0B369FFF16BF901F0017B936 /* IRVviewController.m in Sources */,
+				0B36A00116BF901F0017B936 /* main.m in Sources */,
+				0B36A00216BF901F0017B936 /* MostImportantIssueQuestionaire.m in Sources */,
+				0B36A00316BF901F0017B936 /* MySingelton.m in Sources */,
+				0B36A00416BF901F0017B936 /* PluralityDataViewerViewController.m in Sources */,
+				0B36A00616BF901F0017B936 /* PluralityInstructionsViewController.m in Sources */,
+				0B36A00816BF901F0017B936 /* PluralityMessagesViewController.m in Sources */,
+				0B36A00A16BF901F0017B936 /* PluralitySpreadsheetGenerator.m in Sources */,
+				0B36A00B16BF901F0017B936 /* PluralityStatsViewerViewController.m in Sources */,
+				0B36A00D16BF901F0017B936 /* PluralityViewController.m in Sources */,
+				0B36A00F16BF901F0017B936 /* PoliticalAffiliationQuestionaire.m in Sources */,
+				0B36A01116BF901F0017B936 /* RaceQuestionaire.m in Sources */,
+				0B36A01216BF901F0017B936 /* RangeDataViewerViewController.m in Sources */,
+				0B36A01416BF901F0017B936 /* RangeInstructionsViewController.m in Sources */,
+				0B36A01616BF901F0017B936 /* RangeMessagesViewController.m in Sources */,
+				0B36A01816BF901F0017B936 /* RangeSpreadsheetGenerator.m in Sources */,
+				0B36A01916BF901F0017B936 /* RangeStatsViewerViewController.m in Sources */,
+				0B36A01D16BF901F0017B936 /* RangeViewController.m in Sources */,
+				0B36A02016BF901F0017B936 /* RootViewController.m in Sources */,
+				0B36A02116BF901F0017B936 /* UserDemographicCell.m in Sources */,
+				0B36A02316BF901F0017B936 /* UserDemographicsViewController.m in Sources */,
+				0B36A02516BF901F0017B936 /* UserDemographicTableViewController.m in Sources */,
+				0B36A02716BF901F0017B936 /* UserID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0B369F6216BF901E0017B936 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B369F6316BF901E0017B936 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B369F6416BF901E0017B936 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B369F6516BF901E0017B936 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0B369F6616BF901E0017B936 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B369F6716BF901E0017B936 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		0B369F6E16BF901E0017B936 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B369F6F16BF901E0017B936 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		0B654B111524C235005F8DE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B654B121524C235005F8DE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B654B131524C235005F8DE1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B654B141524C235005F8DE1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0B654B151524C235005F8DE1 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B654B161524C235005F8DE1 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		0B654B181524C235005F8DE1 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B654B191524C235005F8DE1 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		0BCFF670152414F20013C9F0 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BCFF671152414F20013C9F0 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		0BD301BE149F01D200C68B1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BD301BF149F01D200C68B1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BD301C0149F01D200C68B1D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BD301C1149F01D200C68B1D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0BD301C2149F01D200C68B1D /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BD301C3149F01D200C68B1D /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		0BF4B1CE144F4A5D00543234 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BF4B1CF144F4A5D00543234 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BF4B1E6144F4A7B00543234 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BF4B1E7144F4A7B00543234 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BF4B1E0144F4A5D00543234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BF4B1E1144F4A5D00543234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0BF4B1E3144F4A5D00543234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElectoralExperiment/ElectoralExperiment-Prefix.pch";
+				INFOPLIST_FILE = "ElectoralExperiment/ElectoralExperiment-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = ElectoralExperiment;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BF4B1E4144F4A5D00543234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElectoralExperiment/ElectoralExperiment-Prefix.pch";
+				INFOPLIST_FILE = "ElectoralExperiment/ElectoralExperiment-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = ElectoralExperiment;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BF4B1BB144F4A5C00543234 /* Build configuration list for PBXProject "ElectoralExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BF4B1E0144F4A5D00543234 /* Debug */,
+				0BF4B1E1144F4A5D00543234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0BF4B1E2144F4A5D00543234 /* Build configuration list for PBXNativeTarget "ElectoralExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BF4B1E3144F4A5D00543234 /* Debug */,
+				0BF4B1E4144F4A5D00543234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B369F5816BF901E0017B936 /* DemographicsDBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B369F5916BF901E0017B936 /* DemographicsDBModel.xcdatamodel */,
+			);
+			currentVersion = 0B369F5916BF901E0017B936 /* DemographicsDBModel.xcdatamodel */;
+			path = DemographicsDBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		0BF561C315E9318100C11732 /* DemographicsDBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0BF561C415E9318200C11732 /* DemographicsDBModel.xcdatamodel */,
+			);
+			currentVersion = 0BF561C415E9318200C11732 /* DemographicsDBModel.xcdatamodel */;
+			path = DemographicsDBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0BF4B1B8144F4A5C00543234 /* Project object */;
+}
