@@ -227,14 +227,14 @@ typedef enum {
     
     // set the user's demographics data for each table... //
     userID.userID = [NSNumber numberWithInteger:newUserID_offset + ((NSNumber*)[incommingDataDictionary valueForKey:@"userID.description"]).integerValue];
-    genderQuestionaire.userGenderSelection = [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"userGenderSelection"];
-    genderQuestionaire.additionalGenderInformation = [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"additionalGenderInformation"];
-    ageGroupQuestionaire.userAgeGroupSelection = [[incommingDataDictionary valueForKey:@"ageGroupObject.description"] valueForKey:@"userAgeGroupSelection"];
-    raceQuestionaire.userRaceOptionSelection = [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"userRaceOptionSelection"];
-    raceQuestionaire.additionalRaceInformation = [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"additionalRaceInformation"];
-    politicalAffiliationQuestionaire.userPoliticalAffiliationSelection = [[incommingDataDictionary valueForKey:@"politicalAffiliationObject.description"] valueForKey:@"userPoliticalAffiliationSelection"];
-    annualHouseholdIncomeQuestionaire.userAnnualHousholdIncomeSelection = [[incommingDataDictionary valueForKey:@"annualHouseholdIncomeObject.description"] valueForKey:@"userAnnualHousholdIncomeSelection"];
-    mostImportantIssueQuestionare.userAnswer = [[incommingDataDictionary valueForKey:@"mostImportantIssueObject.description"] valueForKey:@"userAnswer"];
+    genderQuestionaire.userGenderSelection =            [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"userGenderSelection"];
+    genderQuestionaire.additionalGenderInformation =    [[incommingDataDictionary valueForKey:@"genderObject.description"] valueForKey:@"additionalGenderInformation"];
+    ageGroupQuestionaire.userAgeGroupSelection =        [[incommingDataDictionary valueForKey:@"ageGroupObject.description"] valueForKey:@"userAgeGroupSelection"];
+    raceQuestionaire.userRaceOptionSelection =          [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"userRaceOptionSelection"];
+    raceQuestionaire.additionalRaceInformation =        [[incommingDataDictionary valueForKey:@"raceObject.description"] valueForKey:@"additionalRaceInformation"];
+    politicalAffiliationQuestionaire.userPoliticalAffiliationSelection =    [[incommingDataDictionary valueForKey:@"politicalAffiliationObject.description"] valueForKey:@"userPoliticalAffiliationSelection"];
+    annualHouseholdIncomeQuestionaire.userAnnualHousholdIncomeSelection =   [[incommingDataDictionary valueForKey:@"annualHouseholdIncomeObject.description"] valueForKey:@"userAnnualHousholdIncomeSelection"];
+    mostImportantIssueQuestionare.userAnswer =                              [[incommingDataDictionary valueForKey:@"mostImportantIssueObject.description"] valueForKey:@"userAnswer"];
         
     // set relationships... //
     userID.raceObject = raceQuestionaire;
@@ -749,6 +749,21 @@ typedef enum {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeLeft;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
